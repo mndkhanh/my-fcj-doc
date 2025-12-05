@@ -6,39 +6,36 @@ chapter: false
 pre: " <b> 4. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** for your report, including this warning.
-{{% /notice %}}
+I have been an active organizer or an event maker at my uni for recent time. But AWS in HCMC makes me so impressed due to its professional and meaningful activities. The events given below are just some of them that I have hands on with. Watch more here:
 
-> In this section, you should list and describe in detail the events you have participated in during your internship or work experience.  
-> 
-> Each event should be presented in the format Event 1, Event 2, Event 3…, along with the following details:
-> * Event name
-> * Date and time
-> * Location (if applicable)
-> * Your role in the event (attendee, event support, speaker, etc.)
-> * A brief description of the event’s content and main activities
-> * Outcomes or value gained (lessons learned, new skills, contribution to the team/project)
-> * This listing helps demonstrate your actual participation as well as the soft skills and experience you have gained from each event.
+### [Event 1](4.1-Event1/)
 
-During my internship, I participated in two events. Each one was a memorable experience that provided new, interesting, and useful knowledge, along with gifts and wonderful moments.
+&emsp;**Event Name:** Kick-off AWS FCJ Workforce - FPTU OJT FALL 2025
 
-### [Event 1](4.1-Event1/)  
-&emsp;**Event Name:** GenAI-powered App-DB Modernization workshop  
+&emsp;**Date & Time:** 8:30 - 12:00, September 6, 2025
 
-&emsp;**Date & Time:** 09:00, August 13, 2025  
+&emsp;**Location:** 26th Floor, Bitexco Tower, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City
 
-&emsp;**Location:** 26th Floor, Bitexco Tower, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City  
-
-&emsp;**Role:** Attendee  
+&emsp;**Role:** Attendee
 
 ---
 
-### [Event 2](4.2-Event2/)  
-&emsp;**Event Name:** GenAI-powered App-DB Modernization workshop  
+### [Event 2](4.2-Event2/)
 
-&emsp;**Date & Time:** 09:00, August 13, 2025  
+&emsp;**Event Name:** Cloud Day AWS 2025 in HCMC
 
-&emsp;**Location:** 26th Floor, Bitexco Tower, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City  
+&emsp;**Date & Time:** September 18, 2025
 
-&emsp;**Role:** Attendee  
+&emsp;**Location:** 26th-36th Floor, Bitexco Tower, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City
+
+&emsp;**Role:** Attendee
+
+### [Event 3](4.3-Event3/)
+
+&emsp;**Event Name:** AI-Driven Development Life Cycle: Reimagining Software Engineering.
+
+&emsp;**Date & Time:** October 3, 2025
+
+&emsp;**Location:** 26th Floor, Bitexco Tower, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City
+
+&emsp;**Role:** Attendee

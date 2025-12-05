@@ -93,6 +93,19 @@
                 href="https://my-cloud-journey-e7994.web.app/vi/5-workshop/5.4-s3-onprem/5.4.1-prepare/"
                 />
   </url><url>
+    <loc>https://my-cloud-journey-e7994.web.app/vi/4-eventparticipated/4.2-event2/</loc>
+    <lastmod>2025-09-09T14:41:44+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://my-cloud-journey-e7994.web.app/4-eventparticipated/4.2-event2/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://my-cloud-journey-e7994.web.app/vi/4-eventparticipated/4.2-event2/"
+                />
+  </url><url>
     <loc>https://my-cloud-journey-e7994.web.app/vi/4-eventparticipated/4.1-event1/</loc>
     <lastmod>2025-09-09T14:41:44+07:00</lastmod>
     <xhtml:link
@@ -106,17 +119,30 @@
                 href="https://my-cloud-journey-e7994.web.app/vi/4-eventparticipated/4.1-event1/"
                 />
   </url><url>
-    <loc>https://my-cloud-journey-e7994.web.app/vi/4-eventparticipated/4.2-event2/</loc>
+    <loc>https://my-cloud-journey-e7994.web.app/vi/4-eventparticipated/4.3-event3/</loc>
     <lastmod>2025-09-09T14:41:44+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://my-cloud-journey-e7994.web.app/4-eventparticipated/4.2-event2/"
+                href="https://my-cloud-journey-e7994.web.app/4-eventparticipated/4.3-event3/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://my-cloud-journey-e7994.web.app/vi/4-eventparticipated/4.2-event2/"
+                href="https://my-cloud-journey-e7994.web.app/vi/4-eventparticipated/4.3-event3/"
+                />
+  </url><url>
+    <loc>https://my-cloud-journey-e7994.web.app/vi/4-eventparticipated/4.x-sample/</loc>
+    <lastmod>2025-09-09T14:41:44+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://my-cloud-journey-e7994.web.app/4-eventparticipated/4.x-sample/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://my-cloud-journey-e7994.web.app/vi/4-eventparticipated/4.x-sample/"
                 />
   </url><url>
     <loc>https://my-cloud-journey-e7994.web.app/vi/5-workshop/5.1-workshop-overview/</loc>
