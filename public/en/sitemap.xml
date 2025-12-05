@@ -301,6 +301,19 @@
                 href="https://my-cloud-journey-e7994.web.app/3-blogstranslated/"
                 />
   </url><url>
+    <loc>https://my-cloud-journey-e7994.web.app/4-eventparticipated/4.4-event4/</loc>
+    <lastmod>2025-11-15T14:00:00+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://my-cloud-journey-e7994.web.app/vi/4-eventparticipated/4.4-event4/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://my-cloud-journey-e7994.web.app/4-eventparticipated/4.4-event4/"
+                />
+  </url><url>
     <loc>https://my-cloud-journey-e7994.web.app/5-workshop/5.4-s3-onprem/</loc>
     <lastmod>2025-09-09T14:41:44+07:00</lastmod>
     <xhtml:link
@@ -340,6 +353,19 @@
                 href="https://my-cloud-journey-e7994.web.app/5-workshop/5.4-s3-onprem/5.4.4-dns-simulation/"
                 />
   </url><url>
+    <loc>https://my-cloud-journey-e7994.web.app/4-eventparticipated/4.5-event5/</loc>
+    <lastmod>2025-11-15T08:30:00+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://my-cloud-journey-e7994.web.app/vi/4-eventparticipated/4.5-event5/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://my-cloud-journey-e7994.web.app/4-eventparticipated/4.5-event5/"
+                />
+  </url><url>
     <loc>https://my-cloud-journey-e7994.web.app/5-workshop/5.5-policy/</loc>
     <lastmod>2025-09-09T14:41:44+07:00</lastmod>
     <xhtml:link
@@ -364,6 +390,19 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://my-cloud-journey-e7994.web.app/5-workshop/"
+                />
+  </url><url>
+    <loc>https://my-cloud-journey-e7994.web.app/4-eventparticipated/4.6-event6/</loc>
+    <lastmod>2025-11-17T08:30:00+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://my-cloud-journey-e7994.web.app/vi/4-eventparticipated/4.6-event6/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://my-cloud-journey-e7994.web.app/4-eventparticipated/4.6-event6/"
                 />
   </url><url>
     <loc>https://my-cloud-journey-e7994.web.app/5-workshop/5.6-cleanup/</loc>
@@ -392,6 +431,19 @@
                 href="https://my-cloud-journey-e7994.web.app/6-self-evaluation/"
                 />
   </url><url>
+    <loc>https://my-cloud-journey-e7994.web.app/4-eventparticipated/4.7-event7/</loc>
+    <lastmod>2025-11-18T08:30:00+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://my-cloud-journey-e7994.web.app/vi/4-eventparticipated/4.7-event7/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://my-cloud-journey-e7994.web.app/4-eventparticipated/4.7-event7/"
+                />
+  </url><url>
     <loc>https://my-cloud-journey-e7994.web.app/7-feedback/</loc>
     <lastmod>2025-09-09T14:41:44+07:00</lastmod>
     <xhtml:link
@@ -403,6 +455,32 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://my-cloud-journey-e7994.web.app/7-feedback/"
+                />
+  </url><url>
+    <loc>https://my-cloud-journey-e7994.web.app/4-eventparticipated/4.8-event8/</loc>
+    <lastmod>2025-09-09T14:41:44+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://my-cloud-journey-e7994.web.app/vi/4-eventparticipated/4.8-event8/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://my-cloud-journey-e7994.web.app/4-eventparticipated/4.8-event8/"
+                />
+  </url><url>
+    <loc>https://my-cloud-journey-e7994.web.app/4-eventparticipated/4.9-event9/</loc>
+    <lastmod>2025-11-29T08:30:00+07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://my-cloud-journey-e7994.web.app/vi/4-eventparticipated/4.9-event9/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://my-cloud-journey-e7994.web.app/4-eventparticipated/4.9-event9/"
                 />
   </url><url>
     <loc>https://my-cloud-journey-e7994.web.app/4-eventparticipated/4.x-sample/</loc>
