@@ -1,125 +1,182 @@
 ---
-title: "Event 2"
+title: "Game Day – Secret Agent(ic) Unicorns"
 date: "2025-09-09T14:41:44+07:00"
-weight: 1
+weight: 8
 chapter: false
-pre: " <b> 4.2. </b> "
+pre: " <b> 4.8. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+### Mục tiêu Sự kiện
 
-# Bài thu hoạch “GenAI-powered App-DB Modernization workshop”
+- Giới thiệu cho người tham dự cách giải quyết vấn đề bằng GenAI thông qua trải nghiệm GameDay tương tác
+- Mang đến trải nghiệm thực hành với **Amazon Bedrock**, **AgentCore**, **Knowledge Bases**, **Guardrails**, và **MCP**
+- Giúp người chơi hiểu cách các AI agent phối hợp với dịch vụ AWS trong workflow thực tế
+- Khuyến khích tinh thần làm việc nhóm giữa các cấp độ kỹ năng để tăng cường học hỏi và tư duy giải quyết vấn đề
+- Trình bày cách các dịch vụ serverless, database, và search tích hợp vào ứng dụng GenAI
+- Tạo ra một môi trường vui vẻ, hấp dẫn, nơi người chơi kiếm điểm thông qua nhiệm vụ, câu đố và thử thách
 
-### Mục Đích Của Sự Kiện
+### Các dịch vụ AWS sử dụng
 
-- Chia sẻ best practices trong thiết kế ứng dụng hiện đại
-- Giới thiệu phương pháp DDD và event-driven architecture
-- Hướng dẫn lựa chọn compute services phù hợp
-- Giới thiệu công cụ AI hỗ trợ development lifecycle
+- **Amazon Bedrock** (Foundation Models, Knowledge Bases, Guardrails)
+- **Amazon Bedrock AgentCore** (Runtime, Memory, Code Interpreter, Observability)
+- **Strands Agents**
+- **Model Context Protocol (MCP)**
+- **Amazon DynamoDB**
+- **Amazon OpenSearch Serverless**
+- **Amazon Q Developer for CLI**
 
-### Danh Sách Diễn Giả
+### Đối tượng Tham dự
 
-- **Jignesh Shah** - Director, Open Source Databases
-- **Erica Liu** - Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** - Assc. Specialist SA, Serverless Amazon Web Services
+Secret Agent(ic) AI GameDay được thiết kế cho **nhiều vai trò khác nhau**—bao gồm data scientist, ML practitioner, architect, developer và operations engineer.  
+Người tham dự:
 
-### Nội Dung Nổi Bật
+- Nên quen với **AWS Console**
+- Có lợi khi làm việc nhóm đa kỹ năng
+- Không bắt buộc biết lập trình (biết thì càng tốt)
+- Được khuyến khích lập nhóm gồm **Beginner**, **Intermediate**, **Expert** để tối ưu hợp tác
 
-#### Đưa ra các ảnh hưởng tiêu cực của kiến trúc ứng dụng cũ
+### Độ Khó
 
-- Thời gian release sản phẩm lâu → Mất doanh thu/bỏ lỡ cơ hội
-- Hoạt động kém hiệu quả → Mất năng suất, tốn kém chi phí
-- Không tuân thủ các quy định về bảo mật → Mất an ninh, uy tín
+Mỗi nhóm lý tưởng gồm **3–5 thành viên** với kỹ năng đa dạng:
 
-#### Chuyển đổi sang kiến trúc ứng dụng mới - Microservice Architecture
+- 1–2 **Experts**
+- 1–2 **Intermediate**
+- 1–2 **Beginners**
 
-Chuyển đổi thành hệ thống modular – từng chức năng là một **dịch vụ độc lập** giao tiếp với nhau qua **sự kiện** với 3 trụ cột cốt lõi:
+Điều này giúp cân bằng kỹ năng và tạo cơ hội học hỏi chéo.
 
-- **Queue Management**: Xử lý tác vụ bất đồng bộ
-- **Caching Strategy:** Tối ưu performance
-- **Message Handling:** Giao tiếp linh hoạt giữa services
+### Điểm nổi bật
 
-#### Domain-Driven Design (DDD)
+#### Hành trình GenAI phiêu lưu
 
-- **Phương pháp 4 bước**: Xác định domain events → sắp xếp timeline → identify actors → xác định bounded contexts
-- **Case study bookstore**: Minh họa cách áp dụng DDD thực tế
-- **Context mapping**: 7 patterns tích hợp bounded contexts
+Sự kiện biến việc học GenAI thành một nhiệm vụ tương tác, nơi các nhóm hoạt động như **Đặc vụ Bí mật**, giải quyết thử thách bằng AI agents, database, knowledge retrieval và công cụ observability.  
+Thay vì học lý thuyết, người chơi tiến qua:
 
-#### Event-Driven Architecture
+- Nhiệm vụ
+- Câu đố tính giờ
+- Phân tích chứng cứ
+- Các thử thách tích điểm
 
-- **3 patterns tích hợp**: Publish/Subscribe, Point-to-point, Streaming
-- **Lợi ích**: Loose coupling, scalability, resilience
-- **So sánh sync vs async**: Hiểu rõ trade-offs (sự đánh đổi)
+Format này giúp tăng cường **học kỹ thuật** và **kỹ năng làm việc nhóm**.
 
-#### Compute Evolution
+---
 
-- **Shared Responsibility Model**: Từ EC2 → ECS → Fargate → Lambda
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value
-- **Functions vs Containers**: Criteria lựa chọn phù hợp
+#### Trải nghiệm thực hành với Bedrock & AgentCore
 
-#### Amazon Q Developer
+Người chơi tương tác với các dịch vụ GenAI hiện đại:
 
-- **SDLC automation**: Từ planning đến maintenance
-- **Code transformation**: Java upgrade, .NET modernization
-- **AWS Transform agents**: VMware, Mainframe, .NET migration
+- Sử dụng **Foundation Models** để suy luận ngôn ngữ tự nhiên
+- Truy xuất dữ liệu qua **Knowledge Bases**
+- Đảm bảo an toàn và tính đúng đắn bằng **Guardrails**
+- Chạy multi-step agents bằng **AgentCore Runtime & Memory**
+- Quan sát hành vi agent, debug và trace
+- Lưu dữ liệu nhiệm vụ trong **DynamoDB**
+- Dùng **OpenSearch Serverless** cho truy xuất nâng cao
 
-### Những Gì Học Được
+Những khái niệm này mô phỏng workload AI thực tế nhưng được trình bày theo cách gamified, dễ tiếp thu.
 
-#### Tư Duy Thiết Kế
+---
 
-- **Business-first approach**: Luôn bắt đầu từ business domain, không phải technology
-- **Ubiquitous language**: Importance của common vocabulary giữa business và tech teams
-- **Bounded contexts**: Cách identify và manage complexity trong large systems
+#### Hợp tác & Chiến lược Đội nhóm
 
-#### Kiến Trúc Kỹ Thuật
+Để thành công, nhóm cần:
 
-- **Event storming technique**: Phương pháp thực tế để mô hình hóa quy trình kinh doanh
-- Sử dụng **Event-driven communication** thay vì synchronous calls
-- **Integration patterns**: Hiểu khi nào dùng sync, async, pub/sub, streaming
-- **Compute spectrum**: Criteria chọn từ VM → containers → serverless
+- Giao tiếp rõ ràng
+- Chia vai trò hợp lý
+- Ghi chú và theo dõi thông tin chung
+- Xử lý sự cố nhanh
+- Linh hoạt thích ứng
 
-#### Chiến Lược Hiện Đại Hóa
+Điểm không chỉ dựa trên hoàn thành nhiệm vụ, mà còn dựa trên **hiệu suất**, **sự sáng tạo**, và **độ chính xác kỹ thuật**.
 
-- **Phased approach**: Không rush, phải có roadmap rõ ràng
-- **7Rs framework**: Nhiều con đường khác nhau tùy thuộc vào đặc điểm của mỗi ứng dụng
-- **ROI measurement**: Cost reduction + business agility
+---
 
-### Ứng Dụng Vào Công Việc
+### Agenda
 
-- **Áp dụng DDD** cho project hiện tại: Event storming sessions với business team
-- **Refactor microservices**: Sử dụng bounded contexts để identify service boundaries
-- **Implement event-driven patterns**: Thay thế một số sync calls bằng async messaging
-- **Serverless adoption**: Pilot AWS Lambda cho một số use cases phù hợp
-- **Try Amazon Q Developer**: Integrate vào development workflow để boost productivity
+- **Intro Presentation & AWS Account Setup – 30 phút**
 
-### Trải nghiệm trong event
+  - Luật chơi và cách tính điểm
+  - Đăng nhập tài khoản AWS
+  - Giới thiệu Bedrock, AgentCore và các dịch vụ hỗ trợ
 
-Tham gia workshop **“GenAI-powered App-DB Modernization”** là một trải nghiệm rất bổ ích, giúp tôi có cái nhìn toàn diện về cách hiện đại hóa ứng dụng và cơ sở dữ liệu bằng các phương pháp và công cụ hiện đại. Một số trải nghiệm nổi bật:
+- **Game Playtime – 120 phút**
 
-#### Học hỏi từ các diễn giả có chuyên môn cao
-- Các diễn giả đến từ AWS và các tổ chức công nghệ lớn đã chia sẻ **best practices** trong thiết kế ứng dụng hiện đại.
-- Qua các case study thực tế, tôi hiểu rõ hơn cách áp dụng **Domain-Driven Design (DDD)** và **Event-Driven Architecture** vào các project lớn.
+  - Bắt đầu nhiệm vụ
+  - Có thời gian nghỉ
+  - Câu đố, nhiệm vụ Agent, thử thách theo thời gian
+  - Các đội thi đua tích lũy điểm cao nhất
 
-#### Trải nghiệm kỹ thuật thực tế
-- Tham gia các phiên trình bày về **event storming** giúp tôi hình dung cách **mô hình hóa quy trình kinh doanh** thành các domain events.
-- Học cách **phân tách microservices** và xác định **bounded contexts** để quản lý sự phức tạp của hệ thống lớn.
-- Hiểu rõ trade-offs giữa **synchronous và asynchronous communication** cũng như các pattern tích hợp như **pub/sub, point-to-point, streaming**.
+- **Closing – 30 phút**
+  - Gửi khảo sát
+  - Công bố **Top 3 đội thắng**
+  - Chụp hình lưu niệm
+  - Tổng kết kiến thức đã học
 
-#### Ứng dụng công cụ hiện đại
-- Trực tiếp tìm hiểu về **Amazon Q Developer**, công cụ AI hỗ trợ SDLC từ lập kế hoạch đến maintenance.
-- Học cách **tự động hóa code transformation** và pilot serverless với **AWS Lambda**, từ đó nâng cao năng suất phát triển.
+---
 
-#### Kết nối và trao đổi
-- Workshop tạo cơ hội trao đổi trực tiếp với các chuyên gia, đồng nghiệp và team business, giúp **nâng cao ngôn ngữ chung (ubiquitous language)** giữa business và tech.
-- Qua các ví dụ thực tế, tôi nhận ra tầm quan trọng của **business-first approach**, luôn bắt đầu từ nhu cầu kinh doanh thay vì chỉ tập trung vào công nghệ.
+### Những Điều Rút Ra
 
-#### Bài học rút ra
-- Việc áp dụng DDD và event-driven patterns giúp giảm **coupling**, tăng **scalability** và **resilience** cho hệ thống.
-- Chiến lược hiện đại hóa cần **phased approach** và đo lường **ROI**, không nên vội vàng chuyển đổi toàn bộ hệ thống.
-- Các công cụ AI như Amazon Q Developer có thể **boost productivity** nếu được tích hợp vào workflow phát triển hiện tại.
+Dù không đạt giải thưởng nào, nhưng đây là một sự kiện đáng nhớ giúp tôi và đội của mình mạnh hơn và tích lũy thêm nhiều kỹ năng phục vụ cho chặng đường tiếp theo.
 
-#### Một số hình ảnh khi tham gia sự kiện
-* Thêm các hình ảnh của các bạn tại đây
-> Tổng thể, sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn giúp tôi thay đổi cách tư duy về thiết kế ứng dụng, hiện đại hóa hệ thống và phối hợp hiệu quả hơn giữa các team.
+#### GenAI Learning
+
+- Thực hành trực tiếp với **Bedrock Foundation Models**
+- Hiểu cách **AgentCore** quản lý memory, reasoning, operations
+- Kỹ thuật quan sát hành vi agent và trace workflow AI nhiều bước
+
+#### Kỹ năng Kỹ thuật
+
+- Sử dụng **Knowledge Bases** và **OpenSearch Serverless** để truy xuất thông tin
+- Áp dụng Guardrails để kiểm soát output an toàn
+- Tận dụng **DynamoDB** để lưu trữ dữ liệu nhiệm vụ
+- Dùng **Amazon Q Developer CLI** để tăng tốc phát triển
+
+#### Kỹ năng Đội nhóm & Chiến lược
+
+- Làm việc nhóm đa kỹ năng giúp học nhanh hơn
+- Giao tiếp hiệu quả và lập kế hoạch tăng khả năng chiến thắng
+- Áp lực thời gian mô phỏng môi trường làm việc thực tế
+
+---
+
+### Ứng dụng vào Công việc
+
+- Áp dụng AI agents để tự động hóa workflow trong công việc
+- Dùng chiến lược truy xuất (Knowledge Bases / OpenSearch) trong dự án thực
+- Nâng cao thực hành AI an toàn bằng Guardrails
+- Thử nghiệm xây dựng multi-step AI agent với Bedrock Agents & AgentCore
+- Dùng Q Developer CLI để tăng tốc prototyping và engineering
+
+---
+
+### Trải nghiệm Sự kiện
+
+Tham gia **Secret Agent(ic) Unicorns GameDay** vừa thú vị vừa kích thích tư duy.  
+Đây không phải workshop thông thường—mà là một **cuộc điều tra AI** yêu cầu tư duy nhanh, sáng tạo và làm việc nhóm hiệu quả.
+
+#### Học thông qua Chơi
+
+Gamification giúp các khái niệm GenAI phức tạp trở nên dễ hiểu hơn.  
+Khi giải nhiệm vụ, chúng tôi học được cách:
+
+- Kết hợp nhiều bước AI agent
+- Debug reasoning path bằng observability
+- Lưu, truy xuất, xác thực thông tin
+- Sử dụng MCP và Bedrock Agents để hoàn thành thử thách
+
+#### Hợp tác & Tinh thần Đồng đội
+
+Mỗi thành viên đóng một vai trò riêng:  
+người debug, người phân tích logic, người thao tác dịch vụ AWS…  
+Sự đa dạng này giúp trải nghiệm vừa vui vừa hiệu quả.
+
+#### Khoảnh Khắc Kết Thúc Đáng Nhớ
+
+Xem leaderboard, chúc mừng đội thắng và chụp hình lưu niệm tạo nên một buổi tổng kết vui vẻ.  
+Đây là sự kết hợp hoàn hảo giữa **học tập, cạnh tranh và xây dựng cộng đồng**.
+
+<div style="text-align: center;">
+  {{< figure src="/images/Events/event8.1.jpg">}}
+</div>
+
+> Nhìn chung, GameDay là một trải nghiệm khó quên, kết hợp học GenAI và nhiệm vụ tương tác, giúp tôi nâng cao cả kỹ năng kỹ thuật lẫn khả năng hợp tác.

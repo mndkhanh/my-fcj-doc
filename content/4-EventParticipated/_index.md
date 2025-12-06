@@ -18,8 +18,6 @@ I have been an active organizer or an event maker at my uni for recent time. But
 
 &emsp;**Role:** Attendee
 
----
-
 ### [Event 2](4.2-Event2/)
 
 &emsp;**Event Name:** Cloud Day AWS 2025 in HCMC

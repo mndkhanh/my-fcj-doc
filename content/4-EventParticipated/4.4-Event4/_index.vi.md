@@ -1,125 +1,107 @@
 ---
-title: "Event 2"
-date: "2025-09-09T14:41:44+07:00"
-weight: 1
+title: "CMC Global TechTalk Series – Cloud & Digital Transformation"
+date: "2025-11-15T14:00:00+07:00"
+weight: 4
 chapter: false
-pre: " <b> 4.2. </b> "
+pre: " <b> 4.4. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+### Mục tiêu Sự kiện
 
-# Bài thu hoạch “GenAI-powered App-DB Modernization workshop”
+- Khám phá các công nghệ dẫn đầu được ứng dụng trong hệ sinh thái chuyển đổi số của CMC Global
+- Học hỏi kiến thức thực tiễn về Cloud Engineering và Cloud Architecture từ các chuyên gia trong ngành
+- Hiểu cách triển khai thực tế các giải pháp cloud migration, hiện đại hóa hệ thống và giải pháp doanh nghiệp
+- Tạo cơ hội cho sinh viên và developer tiếp cận trực tiếp các thực hành cloud hiện đại và quy trình kỹ thuật
+- Thúc đẩy sự kết nối cộng đồng giữa chuyên gia CMC Global và thế hệ kỹ sư cloud tương lai
 
-### Mục Đích Của Sự Kiện
+### Diễn Giả
 
-- Chia sẻ best practices trong thiết kế ứng dụng hiện đại
-- Giới thiệu phương pháp DDD và event-driven architecture
-- Hướng dẫn lựa chọn compute services phù hợp
-- Giới thiệu công cụ AI hỗ trợ development lifecycle
+- **Lê Thanh Đức** – Cloud Delivery Manager, CMC Global
+- **Dư Quốc Thành** – Technical Leader, CMC Global
+- **Văn Hoàng Kha** – Cloud Engineer, AWS Community Builder
 
-### Danh Sách Diễn Giả
+### Điểm Nổi Bật
 
-- **Jignesh Shah** - Director, Open Source Databases
-- **Erica Liu** - Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** - Assc. Specialist SA, Serverless Amazon Web Services
+#### Kiến thức công nghệ dẫn đầu từ CMC Global
 
-### Nội Dung Nổi Bật
+TechTalk Series đã giới thiệu cho người tham dự những công nghệ có tác động mạnh mẽ nhất trong các giải pháp chuyển đổi số toàn diện mà CMC Global đang triển khai, bao gồm:
 
-#### Đưa ra các ảnh hưởng tiêu cực của kiến trúc ứng dụng cũ
+- Chiến lược triển khai cloud-native
+- Hiện đại hóa hệ thống ở cấp độ doanh nghiệp
+- Best practices trong cloud migration
+- Tự động hóa hạ tầng và tối ưu vận hành
+- Case studies thực tế được triển khai cho các khách hàng quy mô lớn
 
-- Thời gian release sản phẩm lâu → Mất doanh thu/bỏ lỡ cơ hội
-- Hoạt động kém hiệu quả → Mất năng suất, tốn kém chi phí
-- Không tuân thủ các quy định về bảo mật → Mất an ninh, uy tín
+Mỗi diễn giả mang đến những góc nhìn khác nhau dựa trên nhiều năm kinh nghiệm thực chiến trong cloud delivery, technical leadership và cộng đồng AWS.
 
-#### Chuyển đổi sang kiến trúc ứng dụng mới - Microservice Architecture
+---
 
-Chuyển đổi thành hệ thống modular – từng chức năng là một **dịch vụ độc lập** giao tiếp với nhau qua **sự kiện** với 3 trụ cột cốt lõi:
+#### Chia sẻ chuyên môn từ các chuyên gia đầu ngành
 
-- **Queue Management**: Xử lý tác vụ bất đồng bộ
-- **Caching Strategy:** Tối ưu performance
-- **Message Handling:** Giao tiếp linh hoạt giữa services
+- **Anh Lê Thanh Đức** chia sẻ góc nhìn về quản lý cloud delivery, làm việc với khách hàng và mở rộng đội ngũ cloud.
+- **Anh Dư Quốc Thành** chia sẻ kiến thức sâu về thiết kế giải pháp và xử lý các thách thức kỹ thuật của doanh nghiệp.
+- **Anh Văn Hoàng Kha**, với vai trò AWS Community Builder, truyền cảm hứng qua các best practices và tư duy cần có để trở thành cloud engineer thành công.
 
-#### Domain-Driven Design (DDD)
+---
 
-- **Phương pháp 4 bước**: Xác định domain events → sắp xếp timeline → identify actors → xác định bounded contexts
-- **Case study bookstore**: Minh họa cách áp dụng DDD thực tế
-- **Context mapping**: 7 patterns tích hợp bounded contexts
+### Những Điều Rút Ra
 
-#### Event-Driven Architecture
+Cuối buổi, rất nhiều câu hỏi được đặt ra khiến không khí vô cùng hào hứng. Tôi đã hỏi anh Đức về _“Anh bắt đầu sự nghiệp DevOps như thế nào?”_ và từ đó tôi hiểu rõ hơn con đường để trở thành một DevOps Engineer.
 
-- **3 patterns tích hợp**: Publish/Subscribe, Point-to-point, Streaming
-- **Lợi ích**: Loose coupling, scalability, resilience
-- **So sánh sync vs async**: Hiểu rõ trade-offs (sự đánh đổi)
+#### Nhận Thức Chiến Lược về Cloud & Hiện Đại Hóa
 
-#### Compute Evolution
+- Cloud transformation thành công dựa trên kiến trúc vững chắc, lập kế hoạch kỹ và tinh thần phối hợp nhóm
+- Doanh nghiệp phụ thuộc nhiều vào tự động hóa để đảm bảo tính ổn định, khả năng mở rộng và hiệu quả vận hành
+- Cloud governance, tối ưu chi phí và bảo mật phải được tích hợp ngay từ đầu
+- Để trở thành cloud engineer, cần học liên tục, thực hành, và tham gia cộng đồng
 
-- **Shared Responsibility Model**: Từ EC2 → ECS → Fargate → Lambda
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value
-- **Functions vs Containers**: Criteria lựa chọn phù hợp
+#### Bài Học Thực Tiễn từ TechTalk
 
-#### Amazon Q Developer
+- Hiểu cách các doanh nghiệp lớn xây dựng và quản lý dự án cloud migration
+- Cách CMC Global ứng dụng cloud-native patterns để triển khai giải pháp digital end-to-end
+- Tầm quan trọng của Infrastructure as Code (IaC), monitoring và DevOps pipelines
+- Ví dụ thực tế về xử lý bottlenecks và vấn đề reliability trong hệ thống production
 
-- **SDLC automation**: Từ planning đến maintenance
-- **Code transformation**: Java upgrade, .NET modernization
-- **AWS Transform agents**: VMware, Mainframe, .NET migration
+---
 
-### Những Gì Học Được
+### Ứng Dụng vào Công Việc
 
-#### Tư Duy Thiết Kế
+- Bắt đầu từ nền tảng cloud và thực hành qua dự án thực tế hoặc hands-on labs
+- Áp dụng nguyên tắc cloud-native như microservices, serverless và automation
+- Sử dụng IaC như Terraform hoặc AWS CDK để quản lý hạ tầng có khả năng mở rộng
+- Phát triển kỹ năng về observability, kiểm soát chi phí và kiến trúc secure-by-design
+- Tham gia các cộng đồng như AWS User Group hoặc chương trình AWS Community Builder
 
-- **Business-first approach**: Luôn bắt đầu từ business domain, không phải technology
-- **Ubiquitous language**: Importance của common vocabulary giữa business và tech teams
-- **Bounded contexts**: Cách identify và manage complexity trong large systems
+---
 
-#### Kiến Trúc Kỹ Thuật
+### Trải Nghiệm Sự Kiện
 
-- **Event storming technique**: Phương pháp thực tế để mô hình hóa quy trình kinh doanh
-- Sử dụng **Event-driven communication** thay vì synchronous calls
-- **Integration patterns**: Hiểu khi nào dùng sync, async, pub/sub, streaming
-- **Compute spectrum**: Criteria chọn từ VM → containers → serverless
+Tham dự **CMC Global TechTalk Series** là một trải nghiệm truyền cảm hứng, giúp tôi hiểu rõ hơn cách công nghệ cloud được áp dụng trong doanh nghiệp thực tế và cách kỹ sư giải quyết các bài toán phức tạp trong dự án chuyển đổi số.
 
-#### Chiến Lược Hiện Đại Hóa
+#### Học Từ Chuyên Gia Trong Ngành
 
-- **Phased approach**: Không rush, phải có roadmap rõ ràng
-- **7Rs framework**: Nhiều con đường khác nhau tùy thuộc vào đặc điểm của mỗi ứng dụng
-- **ROI measurement**: Cost reduction + business agility
+- Nắm được nhiều kiến thức giá trị từ **các quản lý cloud, technical leaders và AWS community builders**
+- Trân trọng sự cởi mở khi chia sẻ những khó khăn thực tế trong dự án
+- Hiểu rõ tư duy cần có để phát triển sự nghiệp cloud trong doanh nghiệp hiện đại
 
-### Ứng Dụng Vào Công Việc
+#### Góc Nhìn Thực Tiễn
 
-- **Áp dụng DDD** cho project hiện tại: Event storming sessions với business team
-- **Refactor microservices**: Sử dụng bounded contexts để identify service boundaries
-- **Implement event-driven patterns**: Thay thế một số sync calls bằng async messaging
-- **Serverless adoption**: Pilot AWS Lambda cho một số use cases phù hợp
-- **Try Amazon Q Developer**: Integrate vào development workflow để boost productivity
+- Học được các ví dụ thực tiễn về triển khai cloud, tự động hóa và hiện đại hóa hệ thống
+- Hiểu cách các đội ngũ tại CMC Global phối hợp để cung cấp giải pháp chất lượng cao
 
-### Trải nghiệm trong event
+#### Giao Lưu & Mở Rộng Mối Quan Hệ
 
-Tham gia workshop **“GenAI-powered App-DB Modernization”** là một trải nghiệm rất bổ ích, giúp tôi có cái nhìn toàn diện về cách hiện đại hóa ứng dụng và cơ sở dữ liệu bằng các phương pháp và công cụ hiện đại. Một số trải nghiệm nổi bật:
+- Trao đổi với diễn giả và người tham dự về lộ trình nghề nghiệp cloud
+- Tìm hiểu thêm về cơ hội trong các đội ngũ kỹ thuật và delivery của CMC Global
 
-#### Học hỏi từ các diễn giả có chuyên môn cao
-- Các diễn giả đến từ AWS và các tổ chức công nghệ lớn đã chia sẻ **best practices** trong thiết kế ứng dụng hiện đại.
-- Qua các case study thực tế, tôi hiểu rõ hơn cách áp dụng **Domain-Driven Design (DDD)** và **Event-Driven Architecture** vào các project lớn.
+#### Bài Học Quan Trọng
 
-#### Trải nghiệm kỹ thuật thực tế
-- Tham gia các phiên trình bày về **event storming** giúp tôi hình dung cách **mô hình hóa quy trình kinh doanh** thành các domain events.
-- Học cách **phân tách microservices** và xác định **bounded contexts** để quản lý sự phức tạp của hệ thống lớn.
-- Hiểu rõ trade-offs giữa **synchronous và asynchronous communication** cũng như các pattern tích hợp như **pub/sub, point-to-point, streaming**.
+- Cloud engineering là hành trình học tập và thử nghiệm không ngừng
+- Doanh nghiệp hiện đại phụ thuộc vào hạ tầng tự động hóa, an toàn và có khả năng mở rộng
+- Việc tham gia cộng đồng giúp tăng tốc phát triển kỹ năng và mở ra nhiều cơ hội
 
-#### Ứng dụng công cụ hiện đại
-- Trực tiếp tìm hiểu về **Amazon Q Developer**, công cụ AI hỗ trợ SDLC từ lập kế hoạch đến maintenance.
-- Học cách **tự động hóa code transformation** và pilot serverless với **AWS Lambda**, từ đó nâng cao năng suất phát triển.
+<div style="text-align: center;">
+  {{< figure src="/images/Events/event4.1.png" caption="_Event Banner_" >}}
+</div>
 
-#### Kết nối và trao đổi
-- Workshop tạo cơ hội trao đổi trực tiếp với các chuyên gia, đồng nghiệp và team business, giúp **nâng cao ngôn ngữ chung (ubiquitous language)** giữa business và tech.
-- Qua các ví dụ thực tế, tôi nhận ra tầm quan trọng của **business-first approach**, luôn bắt đầu từ nhu cầu kinh doanh thay vì chỉ tập trung vào công nghệ.
-
-#### Bài học rút ra
-- Việc áp dụng DDD và event-driven patterns giúp giảm **coupling**, tăng **scalability** và **resilience** cho hệ thống.
-- Chiến lược hiện đại hóa cần **phased approach** và đo lường **ROI**, không nên vội vàng chuyển đổi toàn bộ hệ thống.
-- Các công cụ AI như Amazon Q Developer có thể **boost productivity** nếu được tích hợp vào workflow phát triển hiện tại.
-
-#### Một số hình ảnh khi tham gia sự kiện
-* Thêm các hình ảnh của các bạn tại đây
-> Tổng thể, sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn giúp tôi thay đổi cách tư duy về thiết kế ứng dụng, hiện đại hóa hệ thống và phối hợp hiệu quả hơn giữa các team.
+> Nhìn chung, buổi TechTalk mang lại nhiều góc nhìn giá trị về kỹ thuật cloud doanh nghiệp, thiết kế hệ thống hiện đại và tầm quan trọng của việc học hỏi liên tục trong thời đại chuyển đổi số.

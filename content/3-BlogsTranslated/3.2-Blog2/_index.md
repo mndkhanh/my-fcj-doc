@@ -1,124 +1,139 @@
 ---
-title: "Blog 2"
+title: "Minimize risk through defense in depth: Building a comprehensive AWS control framework"
 date: "2025-09-09T14:41:44+07:00"
-weight: 1
+weight: 2
 chapter: false
 pre: " <b> 3.2. </b> "
 ---
 
-
-# Getting Started with Healthcare Data Lakes: Using Microservices
-
-Data lakes can help hospitals and healthcare facilities turn data into business insights, maintain business continuity, and protect patient privacy. A **data lake** is a centralized, managed, and secure repository to store all your data, both in its raw and processed forms for analysis. Data lakes allow you to break down data silos and combine different types of analytics to gain insights and make better business decisions.
-
-This blog post is part of a larger series on getting started with setting up a healthcare data lake. In my final post of the series, *“Getting Started with Healthcare Data Lakes: Diving into Amazon Cognito”*, I focused on the specifics of using Amazon Cognito and Attribute Based Access Control (ABAC) to authenticate and authorize users in the healthcare data lake solution. In this blog, I detail how the solution evolved at a foundational level, including the design decisions I made and the additional features used. You can access the code samples for the solution in this Git repo for reference.
+_Authors: Luis Pastor, Rodolfo Brenes, and George’son Tib_  
+_Published At: September 23, 2025_  
+_Categories: AWS CloudFormation, AWS Config, AWS Control Tower, AWS Organizations, AWS Security Hub, Security, Identity & Compliance_
 
 ---
 
-## Architecture Guidance
+## Challenges Faced by Security and Governance Teams
 
-The main change since the last presentation of the overall architecture is the decomposition of a single service into a set of smaller services to improve maintainability and flexibility. Integrating a large volume of diverse healthcare data often requires specialized connectors for each format; by keeping them encapsulated separately as microservices, we can add, remove, and modify each connector without affecting the others. The microservices are loosely coupled via publish/subscribe messaging centered in what I call the “pub/sub hub.”
+Security and governance teams across all environments face a common challenge: translating abstract security and governance requirements into a concrete, integrated control framework. AWS services provide capabilities that organizations can use to implement controls across multiple architectural layers—from provisioning infrastructure to continuous operational monitoring.
 
-This solution represents what I would consider another reasonable sprint iteration from my last post. The scope is still limited to the ingestion and basic parsing of **HL7v2 messages** formatted in **Encoding Rules 7 (ER7)** through a REST interface.
+Many organizations deploy multi-account environments using **AWS Control Tower** or **Landing Zone Accelerator** as the foundational layer for governance and security architecture. Once the environment is set up, organizations typically add **detective controls** from services such as **AWS Security Hub** and **AWS Config**, based on security, compliance, and operational needs. While this progression is a strong starting point, there remains significant opportunity to implement **defense-in-depth** strategies that strengthen the overall security posture.
 
-**The solution architecture is now as follows:**
+Highly regulated industries such as fintech and financial services often serve as the gold standard for governance and security controls. While these sectors have developed robust frameworks, continuous improvement and cross-industry learning remain valuable for organizations seeking to enhance their control environments. However, many organizations struggle to move beyond a baseline compliance mindset. Based on our experience with customers across industries, this limited perspective often stems from factors such as:
 
-> *Figure 1. Overall architecture; colored boxes represent distinct services.*
+- Immediate compliance pressure
+- Limited resources
+- Lack of understanding of control maturity roadmaps
+- Overemphasis on detection vs. prevention
+- Preference for technology-agnostic controls instead of leveraging AWS-integrated capabilities—leading to unnecessary complexity
 
----
+**The good news:**  
+A more holistic approach—using AWS preventive, proactive, detective, and responsive controls—can dramatically reduce risk while enabling operational efficiency through automation.
 
-While the term *microservices* has some inherent ambiguity, certain traits are common:  
-- Small, autonomous, loosely coupled  
-- Reusable, communicating through well-defined interfaces  
-- Specialized to do one thing well  
-- Often implemented in an **event-driven architecture**
+This article presents a practical framework to help you develop a strong security and governance control strategy. We explore how your organization can advance from a detection-centric posture to a multilayered control framework, including real-world examples across the resource lifecycle—such as infrastructure-as-code testing and preventative controls like:
 
-When determining where to draw boundaries between microservices, consider:  
-- **Intrinsic**: technology used, performance, reliability, scalability  
-- **Extrinsic**: dependent functionality, rate of change, reusability  
-- **Human**: team ownership, managing *cognitive load*
+- **Service Control Policies (SCPs)**
+- **Resource Control Policies (RCPs)**
+- **Declarative Policies (DPs)**
 
----
-
-## Technology Choices and Communication Scope
-
-| Communication scope                       | Technologies / patterns to consider                                                        |
-| ----------------------------------------- | ------------------------------------------------------------------------------------------ |
-| Within a single microservice              | Amazon Simple Queue Service (Amazon SQS), AWS Step Functions                               |
-| Between microservices in a single service | AWS CloudFormation cross-stack references, Amazon Simple Notification Service (Amazon SNS) |
-| Between services                          | Amazon EventBridge, AWS Cloud Map, Amazon API Gateway                                      |
+Grounded in best practices from highly regulated industries and enhanced by modern cloud capabilities such as **AWS Organizations** and **AWS Control Tower**, we provide a structured approach for elevating your organization’s control environment beyond basic compliance.
 
 ---
 
-## The Pub/Sub Hub
+## Customer Challenges in Control Implementation
 
-Using a **hub-and-spoke** architecture (or message broker) works well with a small number of tightly related microservices.  
-- Each microservice depends only on the *hub*  
-- Inter-microservice connections are limited to the contents of the published message  
-- Reduces the number of synchronous calls since pub/sub is a one-way asynchronous *push*
+Organizations encounter many obstacles when attempting to implement a comprehensive AWS control framework. Below are key challenges:
 
-Drawback: **coordination and monitoring** are needed to avoid microservices processing the wrong message.
+### 1. Limited Resources and Skill Gaps
 
----
+Security teams often face expanding responsibilities while operating with constrained resources. They commonly adopt **detective controls** first because they appear easier to implement and provide immediate visibility—but this can create critical gaps in security posture.
 
-## Core Microservice
+Teams may also lack expertise across all control types, especially **preventative**, **proactive**, and **responsive** controls. Pressure to demonstrate fast improvements often leads to tactical fixes instead of strategic, multi-layered security design.
 
-Provides foundational data and communication layer, including:  
-- **Amazon S3** bucket for data  
-- **Amazon DynamoDB** for data catalog  
-- **AWS Lambda** to write messages into the data lake and catalog  
-- **Amazon SNS** topic as the *hub*  
-- **Amazon S3** bucket for artifacts such as Lambda code
+### 2. Analysis Paralysis
 
-> Only allow indirect write access to the data lake through a Lambda function → ensures consistency.
+Choosing which tools to prioritize is difficult. The vast array of AWS security services and third-party tooling can overwhelm teams. Converting compliance requirements into cloud-focused capabilities while maintaining visibility of emerging threats adds further complexity.
 
----
+These challenges may delay important improvements while teams search for a “perfect solution.”
 
-## Front Door Microservice
+### 3. Misunderstanding Defense in Depth
 
-- Provides an API Gateway for external REST interaction  
-- Authentication & authorization based on **OIDC** via **Amazon Cognito**  
-- Self-managed *deduplication* mechanism using DynamoDB instead of SNS FIFO because:  
-  1. SNS deduplication TTL is only 5 minutes  
-  2. SNS FIFO requires SQS FIFO  
-  3. Ability to proactively notify the sender that the message is a duplicate  
+Defense in depth is often misunderstood. Some believe that a single strong control—such as strict IAM roles or least-privilege policies—is sufficient.
 
----
+This overlooks the importance of multiple coordinated controls across different layers. Many teams also underestimate the role of organizational-level controls like SCPs, which complement workload-level controls to create a stronger overall posture.
 
-## Staging ER7 Microservice
+### 4. Security Maturity Journey Challenges
 
-- Lambda “trigger” subscribed to the pub/sub hub, filtering messages by attribute  
-- Step Functions Express Workflow to convert ER7 → JSON  
-- Two Lambdas:  
-  1. Fix ER7 formatting (newline, carriage return)  
-  2. Parsing logic  
-- Result or error is pushed back into the pub/sub hub  
+Many organizations remain stuck at early maturity stages, relying heavily on detection without advancing toward prevention. Controls are often applied inconsistently and lack alignment to a broader security strategy.
+
+Measuring progress over time is also difficult—contributing to stalled maturity.
+
+### 5. Scale and Consistency Issues
+
+As AWS environments grow, consistent governance becomes harder. Managing exceptions and special cases across growing infrastructure introduces operational complexity. Controls may be partially implemented or implemented incorrectly—reducing their intended impact.
 
 ---
 
-## New Features in the Solution
+## Strategic Investment in Security
 
-### 1. AWS CloudFormation Cross-Stack References
-Example *outputs* in the core microservice:
-```yaml
-Outputs:
-  Bucket:
-    Value: !Ref Bucket
-    Export:
-      Name: !Sub ${AWS::StackName}-Bucket
-  ArtifactBucket:
-    Value: !Ref ArtifactBucket
-    Export:
-      Name: !Sub ${AWS::StackName}-ArtifactBucket
-  Topic:
-    Value: !Ref Topic
-    Export:
-      Name: !Sub ${AWS::StackName}-Topic
-  Catalog:
-    Value: !Ref Catalog
-    Export:
-      Name: !Sub ${AWS::StackName}-Catalog
-  CatalogArn:
-    Value: !GetAtt Catalog.Arn
-    Export:
-      Name: !Sub ${AWS::StackName}-CatalogArn
+Implementing comprehensive controls requires initial investment, but long-term benefits can significantly transform organizational operations.
+
+The transformation begins with establishing **baseline controls** using proven starting points like:
+
+- **AWS Control Tower**
+- **Customizations for AWS Control Tower**
+
+These tools provide hundreds of built-in controls and guardrails for secure multi-account architectures.
+
+Rather than manually constructing all account-level and resource-level controls, you can accelerate by using AWS-native governance frameworks and automation.
+
+Once baseline controls are in place, benefits extend beyond the security team:
+
+- Development and operations teams deploy faster and more confidently
+- Security becomes an enabler, not a blocker
+- Guardrails ensure strong posture without slowing innovation
+
+As your organization evolves, automation and layered controls reduce operational burden and help shift security teams from reactive firefighting to proactive risk management.
+
+---
+
+## Understanding the Types of Security Controls and How They Work Together
+
+AWS defines four major categories of controls, all of which work together to form a comprehensive security framework. Let’s examine each type using a common requirement: **preventing data leakage from public Amazon S3 buckets.**
+
+---
+
+## Preventative Controls
+
+Preventative controls establish the foundational security requirements by defining policies, standards, and expectations before resources are deployed.
+
+An example S3 requirement:
+
+> **All S3 buckets must be private by default, and public access may only be granted through an approved exception process.**
+
+Preventative controls apply across organizational and resource levels:
+
+### Organization Level
+
+- **SCPs** to block creation of publicly accessible S3 buckets
+- **SCPs** to prevent unsafe S3 object uploads, such as blocking SSE-C encryption unless explicitly approved
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "DenySSECEncryption",
+      "Effect": "Deny",
+      "Action": "s3:PutObject",
+      "Resource": "*",
+      "Condition": {
+        "Null": {
+          "s3:x-amz-server-side-encryption-customer-algorithm": "false"
+        }
+      }
+    }
+  ]
+}
+```
+
+### Resource Level

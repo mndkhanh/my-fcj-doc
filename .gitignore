@@ -1,4 +1,5 @@
 .firebase
 firebase.json
 .firebaserc
-ádfádfsd
+node_modules
+.DS_Store

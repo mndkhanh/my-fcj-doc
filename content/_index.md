@@ -5,10 +5,10 @@ weight: 1
 chapter: false
 ---
 
-    
 # Internship Report
 
 ### Student Information:
+
 &emsp; **Full Name:** Mai Nguyễn Duy Khánh
 
 &emsp; **Phone Number:** 0362718422
@@ -25,7 +25,7 @@ chapter: false
 
 &emsp; **Internship Position:** FCJ Cloud Intern
 
-&emsp; **Internship Duration:** From 06/08/2025 to 2/2025
+&emsp; **Internship Duration:** From 06/08/2025 to 31/12/2025
 
 ![Your profile picture](/images/avatar.jpg)
 
