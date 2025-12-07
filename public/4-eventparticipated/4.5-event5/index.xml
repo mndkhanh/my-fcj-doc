@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>AWS Cloud Mastery Series #1: AI/ML/GenAI on AWS on Internship Report</title>
-    <link>https://my-cloud-journey-e7994.web.app/4-eventparticipated/4.5-event5/</link>
+    <link>http://127.0.0.1:5500/public/4-eventparticipated/4.5-event5/</link>
     <description>Recent content in AWS Cloud Mastery Series #1: AI/ML/GenAI on AWS on Internship Report</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="https://my-cloud-journey-e7994.web.app/4-eventparticipated/4.5-event5/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://127.0.0.1:5500/public/4-eventparticipated/4.5-event5/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

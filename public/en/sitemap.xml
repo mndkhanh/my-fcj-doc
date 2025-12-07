@@ -2,470 +2,433 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://my-cloud-journey-e7994.web.app/3-blogstranslated/3.1-blog1/</loc>
+    <loc>http://127.0.0.1:5500/public/3-blogstranslated/3.1-blog1/</loc>
     <lastmod>2025-09-23T09:00:00+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://my-cloud-journey-e7994.web.app/vi/3-blogstranslated/3.1-blog1/"
+                href="http://127.0.0.1:5500/public/vi/3-blogstranslated/3.1-blog1/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://my-cloud-journey-e7994.web.app/3-blogstranslated/3.1-blog1/"
+                href="http://127.0.0.1:5500/public/3-blogstranslated/3.1-blog1/"
                 />
   </url><url>
-    <loc>https://my-cloud-journey-e7994.web.app/5-workshop/5.3-s3-vpc/5.3.1-create-gwe/</loc>
+    <loc>http://127.0.0.1:5500/public/</loc>
     <lastmod>2025-09-09T14:41:44+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://my-cloud-journey-e7994.web.app/vi/5-workshop/5.3-s3-vpc/5.3.1-create-gwe/"
+                href="http://127.0.0.1:5500/public/vi/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://my-cloud-journey-e7994.web.app/5-workshop/5.3-s3-vpc/5.3.1-create-gwe/"
+                href="http://127.0.0.1:5500/public/"
                 />
   </url><url>
-    <loc>https://my-cloud-journey-e7994.web.app/</loc>
+    <loc>http://127.0.0.1:5500/public/1-worklog/1.1-week1/</loc>
     <lastmod>2025-09-09T14:41:44+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://my-cloud-journey-e7994.web.app/vi/"
+                href="http://127.0.0.1:5500/public/vi/1-worklog/1.1-week1/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://my-cloud-journey-e7994.web.app/"
+                href="http://127.0.0.1:5500/public/1-worklog/1.1-week1/"
                 />
   </url><url>
-    <loc>https://my-cloud-journey-e7994.web.app/5-workshop/5.1-workshop-overview/</loc>
+    <loc>http://127.0.0.1:5500/public/1-worklog/1.2-week2/</loc>
     <lastmod>2025-09-09T14:41:44+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://my-cloud-journey-e7994.web.app/vi/5-workshop/5.1-workshop-overview/"
+                href="http://127.0.0.1:5500/public/vi/1-worklog/1.2-week2/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://my-cloud-journey-e7994.web.app/5-workshop/5.1-workshop-overview/"
+                href="http://127.0.0.1:5500/public/1-worklog/1.2-week2/"
                 />
   </url><url>
-    <loc>https://my-cloud-journey-e7994.web.app/5-workshop/5.4-s3-onprem/5.4.1-prepare/</loc>
+    <loc>http://127.0.0.1:5500/public/1-worklog/</loc>
     <lastmod>2025-09-09T14:41:44+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://my-cloud-journey-e7994.web.app/vi/5-workshop/5.4-s3-onprem/5.4.1-prepare/"
+                href="http://127.0.0.1:5500/public/vi/1-worklog/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://my-cloud-journey-e7994.web.app/5-workshop/5.4-s3-onprem/5.4.1-prepare/"
+                href="http://127.0.0.1:5500/public/1-worklog/"
                 />
   </url><url>
-    <loc>https://my-cloud-journey-e7994.web.app/1-worklog/1.1-week1/</loc>
-    <lastmod>2025-09-09T14:41:44+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="https://my-cloud-journey-e7994.web.app/vi/1-worklog/1.1-week1/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://my-cloud-journey-e7994.web.app/1-worklog/1.1-week1/"
-                />
-  </url><url>
-    <loc>https://my-cloud-journey-e7994.web.app/1-worklog/1.2-week2/</loc>
-    <lastmod>2025-09-09T14:41:44+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="https://my-cloud-journey-e7994.web.app/vi/1-worklog/1.2-week2/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://my-cloud-journey-e7994.web.app/1-worklog/1.2-week2/"
-                />
-  </url><url>
-    <loc>https://my-cloud-journey-e7994.web.app/1-worklog/</loc>
-    <lastmod>2025-09-09T14:41:44+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="https://my-cloud-journey-e7994.web.app/vi/1-worklog/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://my-cloud-journey-e7994.web.app/1-worklog/"
-                />
-  </url><url>
-    <loc>https://my-cloud-journey-e7994.web.app/4-eventparticipated/4.1-event1/</loc>
+    <loc>http://127.0.0.1:5500/public/4-eventparticipated/4.1-event1/</loc>
     <lastmod>2025-09-06T08:30:00+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://my-cloud-journey-e7994.web.app/vi/4-eventparticipated/4.1-event1/"
+                href="http://127.0.0.1:5500/public/vi/4-eventparticipated/4.1-event1/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://my-cloud-journey-e7994.web.app/4-eventparticipated/4.1-event1/"
+                href="http://127.0.0.1:5500/public/4-eventparticipated/4.1-event1/"
                 />
   </url><url>
-    <loc>https://my-cloud-journey-e7994.web.app/4-eventparticipated/4.2-event2/</loc>
+    <loc>http://127.0.0.1:5500/public/5-workshop/5.4-agent-core-run/5.4.2-call-agentcore/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://127.0.0.1:5500/public/vi/5-workshop/5.4-agent-core-run/5.4.2-call-agentcore/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://127.0.0.1:5500/public/5-workshop/5.4-agent-core-run/5.4.2-call-agentcore/"
+                />
+  </url><url>
+    <loc>http://127.0.0.1:5500/public/5-workshop/5.4-agent-core-run/5.4.1-run-agentcore/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://127.0.0.1:5500/public/vi/5-workshop/5.4-agent-core-run/5.4.1-run-agentcore/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://127.0.0.1:5500/public/5-workshop/5.4-agent-core-run/5.4.1-run-agentcore/"
+                />
+  </url><url>
+    <loc>http://127.0.0.1:5500/public/5-workshop/5.1-workshop-overview/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://127.0.0.1:5500/public/vi/5-workshop/5.1-workshop-overview/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://127.0.0.1:5500/public/5-workshop/5.1-workshop-overview/"
+                />
+  </url><url>
+    <loc>http://127.0.0.1:5500/public/4-eventparticipated/4.2-event2/</loc>
     <lastmod>2025-09-09T14:41:44+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://my-cloud-journey-e7994.web.app/vi/4-eventparticipated/4.2-event2/"
+                href="http://127.0.0.1:5500/public/vi/4-eventparticipated/4.2-event2/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://my-cloud-journey-e7994.web.app/4-eventparticipated/4.2-event2/"
+                href="http://127.0.0.1:5500/public/4-eventparticipated/4.2-event2/"
                 />
   </url><url>
-    <loc>https://my-cloud-journey-e7994.web.app/5-workshop/5.4-s3-onprem/5.4.2-create-interface-enpoint/</loc>
+    <loc>http://127.0.0.1:5500/public/3-blogstranslated/3.2-blog2/</loc>
     <lastmod>2025-09-09T14:41:44+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://my-cloud-journey-e7994.web.app/vi/5-workshop/5.4-s3-onprem/5.4.2-create-interface-enpoint/"
+                href="http://127.0.0.1:5500/public/vi/3-blogstranslated/3.2-blog2/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://my-cloud-journey-e7994.web.app/5-workshop/5.4-s3-onprem/5.4.2-create-interface-enpoint/"
+                href="http://127.0.0.1:5500/public/3-blogstranslated/3.2-blog2/"
                 />
   </url><url>
-    <loc>https://my-cloud-journey-e7994.web.app/3-blogstranslated/3.2-blog2/</loc>
+    <loc>http://127.0.0.1:5500/public/2-proposal/</loc>
     <lastmod>2025-09-09T14:41:44+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://my-cloud-journey-e7994.web.app/vi/3-blogstranslated/3.2-blog2/"
+                href="http://127.0.0.1:5500/public/vi/2-proposal/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://my-cloud-journey-e7994.web.app/3-blogstranslated/3.2-blog2/"
+                href="http://127.0.0.1:5500/public/2-proposal/"
                 />
   </url><url>
-    <loc>https://my-cloud-journey-e7994.web.app/5-workshop/5.2-prerequiste/</loc>
-    <lastmod>2025-09-09T14:41:44+07:00</lastmod>
+    <loc>http://127.0.0.1:5500/public/5-workshop/5.2-prerequiste/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://my-cloud-journey-e7994.web.app/vi/5-workshop/5.2-prerequiste/"
+                href="http://127.0.0.1:5500/public/vi/5-workshop/5.2-prerequiste/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://my-cloud-journey-e7994.web.app/5-workshop/5.2-prerequiste/"
+                href="http://127.0.0.1:5500/public/5-workshop/5.2-prerequiste/"
                 />
   </url><url>
-    <loc>https://my-cloud-journey-e7994.web.app/2-proposal/</loc>
-    <lastmod>2025-09-09T14:41:44+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="https://my-cloud-journey-e7994.web.app/vi/2-proposal/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://my-cloud-journey-e7994.web.app/2-proposal/"
-                />
-  </url><url>
-    <loc>https://my-cloud-journey-e7994.web.app/5-workshop/5.3-s3-vpc/5.3.2-test-gwe/</loc>
-    <lastmod>2025-09-09T14:41:44+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="https://my-cloud-journey-e7994.web.app/vi/5-workshop/5.3-s3-vpc/5.3.2-test-gwe/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://my-cloud-journey-e7994.web.app/5-workshop/5.3-s3-vpc/5.3.2-test-gwe/"
-                />
-  </url><url>
-    <loc>https://my-cloud-journey-e7994.web.app/4-eventparticipated/4.3-event3/</loc>
+    <loc>http://127.0.0.1:5500/public/4-eventparticipated/4.3-event3/</loc>
     <lastmod>2025-10-03T14:00:00+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://my-cloud-journey-e7994.web.app/vi/4-eventparticipated/4.3-event3/"
+                href="http://127.0.0.1:5500/public/vi/4-eventparticipated/4.3-event3/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://my-cloud-journey-e7994.web.app/4-eventparticipated/4.3-event3/"
+                href="http://127.0.0.1:5500/public/4-eventparticipated/4.3-event3/"
                 />
   </url><url>
-    <loc>https://my-cloud-journey-e7994.web.app/3-blogstranslated/3.3-blog3/</loc>
+    <loc>http://127.0.0.1:5500/public/3-blogstranslated/3.3-blog3/</loc>
     <lastmod>2025-09-09T14:41:44+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://my-cloud-journey-e7994.web.app/vi/3-blogstranslated/3.3-blog3/"
+                href="http://127.0.0.1:5500/public/vi/3-blogstranslated/3.3-blog3/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://my-cloud-journey-e7994.web.app/3-blogstranslated/3.3-blog3/"
+                href="http://127.0.0.1:5500/public/3-blogstranslated/3.3-blog3/"
                 />
   </url><url>
-    <loc>https://my-cloud-journey-e7994.web.app/5-workshop/5.3-s3-vpc/</loc>
+    <loc>http://127.0.0.1:5500/public/3-blogstranslated/</loc>
     <lastmod>2025-09-09T14:41:44+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://my-cloud-journey-e7994.web.app/vi/5-workshop/5.3-s3-vpc/"
+                href="http://127.0.0.1:5500/public/vi/3-blogstranslated/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://my-cloud-journey-e7994.web.app/5-workshop/5.3-s3-vpc/"
+                href="http://127.0.0.1:5500/public/3-blogstranslated/"
                 />
   </url><url>
-    <loc>https://my-cloud-journey-e7994.web.app/5-workshop/5.4-s3-onprem/5.4.3-test-endpoint/</loc>
-    <lastmod>2025-09-09T14:41:44+07:00</lastmod>
+    <loc>http://127.0.0.1:5500/public/5-workshop/5.3-architecture/5.3.4-agent-core/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://my-cloud-journey-e7994.web.app/vi/5-workshop/5.4-s3-onprem/5.4.3-test-endpoint/"
+                href="http://127.0.0.1:5500/public/vi/5-workshop/5.3-architecture/5.3.4-agent-core/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://my-cloud-journey-e7994.web.app/5-workshop/5.4-s3-onprem/5.4.3-test-endpoint/"
+                href="http://127.0.0.1:5500/public/5-workshop/5.3-architecture/5.3.4-agent-core/"
                 />
   </url><url>
-    <loc>https://my-cloud-journey-e7994.web.app/3-blogstranslated/</loc>
-    <lastmod>2025-09-09T14:41:44+07:00</lastmod>
+    <loc>http://127.0.0.1:5500/public/5-workshop/5.3-architecture/5.3.1-agentcore-memory/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://my-cloud-journey-e7994.web.app/vi/3-blogstranslated/"
+                href="http://127.0.0.1:5500/public/vi/5-workshop/5.3-architecture/5.3.1-agentcore-memory/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://my-cloud-journey-e7994.web.app/3-blogstranslated/"
+                href="http://127.0.0.1:5500/public/5-workshop/5.3-architecture/5.3.1-agentcore-memory/"
                 />
   </url><url>
-    <loc>https://my-cloud-journey-e7994.web.app/4-eventparticipated/4.4-event4/</loc>
+    <loc>http://127.0.0.1:5500/public/5-workshop/5.3-architecture/5.3.2-groq-api/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://127.0.0.1:5500/public/vi/5-workshop/5.3-architecture/5.3.2-groq-api/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://127.0.0.1:5500/public/5-workshop/5.3-architecture/5.3.2-groq-api/"
+                />
+  </url><url>
+    <loc>http://127.0.0.1:5500/public/5-workshop/5.3-architecture/5.3.3-chunking/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://127.0.0.1:5500/public/vi/5-workshop/5.3-architecture/5.3.3-chunking/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://127.0.0.1:5500/public/5-workshop/5.3-architecture/5.3.3-chunking/"
+                />
+  </url><url>
+    <loc>http://127.0.0.1:5500/public/5-workshop/5.3-architecture/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://127.0.0.1:5500/public/vi/5-workshop/5.3-architecture/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://127.0.0.1:5500/public/5-workshop/5.3-architecture/"
+                />
+  </url><url>
+    <loc>http://127.0.0.1:5500/public/4-eventparticipated/4.4-event4/</loc>
     <lastmod>2025-11-15T14:00:00+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://my-cloud-journey-e7994.web.app/vi/4-eventparticipated/4.4-event4/"
+                href="http://127.0.0.1:5500/public/vi/4-eventparticipated/4.4-event4/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://my-cloud-journey-e7994.web.app/4-eventparticipated/4.4-event4/"
+                href="http://127.0.0.1:5500/public/4-eventparticipated/4.4-event4/"
                 />
   </url><url>
-    <loc>https://my-cloud-journey-e7994.web.app/5-workshop/5.4-s3-onprem/</loc>
+    <loc>http://127.0.0.1:5500/public/4-eventparticipated/</loc>
     <lastmod>2025-09-09T14:41:44+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://my-cloud-journey-e7994.web.app/vi/5-workshop/5.4-s3-onprem/"
+                href="http://127.0.0.1:5500/public/vi/4-eventparticipated/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://my-cloud-journey-e7994.web.app/5-workshop/5.4-s3-onprem/"
+                href="http://127.0.0.1:5500/public/4-eventparticipated/"
                 />
   </url><url>
-    <loc>https://my-cloud-journey-e7994.web.app/4-eventparticipated/</loc>
-    <lastmod>2025-09-09T14:41:44+07:00</lastmod>
+    <loc>http://127.0.0.1:5500/public/5-workshop/5.4-agent-core-run/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://my-cloud-journey-e7994.web.app/vi/4-eventparticipated/"
+                href="http://127.0.0.1:5500/public/vi/5-workshop/5.4-agent-core-run/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://my-cloud-journey-e7994.web.app/4-eventparticipated/"
+                href="http://127.0.0.1:5500/public/5-workshop/5.4-agent-core-run/"
                 />
   </url><url>
-    <loc>https://my-cloud-journey-e7994.web.app/5-workshop/5.4-s3-onprem/5.4.4-dns-simulation/</loc>
-    <lastmod>2025-09-09T14:41:44+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="https://my-cloud-journey-e7994.web.app/vi/5-workshop/5.4-s3-onprem/5.4.4-dns-simulation/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://my-cloud-journey-e7994.web.app/5-workshop/5.4-s3-onprem/5.4.4-dns-simulation/"
-                />
-  </url><url>
-    <loc>https://my-cloud-journey-e7994.web.app/4-eventparticipated/4.5-event5/</loc>
+    <loc>http://127.0.0.1:5500/public/4-eventparticipated/4.5-event5/</loc>
     <lastmod>2025-11-15T08:30:00+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://my-cloud-journey-e7994.web.app/vi/4-eventparticipated/4.5-event5/"
+                href="http://127.0.0.1:5500/public/vi/4-eventparticipated/4.5-event5/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://my-cloud-journey-e7994.web.app/4-eventparticipated/4.5-event5/"
+                href="http://127.0.0.1:5500/public/4-eventparticipated/4.5-event5/"
                 />
   </url><url>
-    <loc>https://my-cloud-journey-e7994.web.app/5-workshop/5.5-policy/</loc>
-    <lastmod>2025-09-09T14:41:44+07:00</lastmod>
+    <loc>http://127.0.0.1:5500/public/5-workshop/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://my-cloud-journey-e7994.web.app/vi/5-workshop/5.5-policy/"
+                href="http://127.0.0.1:5500/public/vi/5-workshop/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://my-cloud-journey-e7994.web.app/5-workshop/5.5-policy/"
+                href="http://127.0.0.1:5500/public/5-workshop/"
                 />
   </url><url>
-    <loc>https://my-cloud-journey-e7994.web.app/5-workshop/</loc>
-    <lastmod>2025-09-09T14:41:44+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="https://my-cloud-journey-e7994.web.app/vi/5-workshop/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://my-cloud-journey-e7994.web.app/5-workshop/"
-                />
-  </url><url>
-    <loc>https://my-cloud-journey-e7994.web.app/4-eventparticipated/4.6-event6/</loc>
+    <loc>http://127.0.0.1:5500/public/4-eventparticipated/4.6-event6/</loc>
     <lastmod>2025-11-17T08:30:00+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://my-cloud-journey-e7994.web.app/vi/4-eventparticipated/4.6-event6/"
+                href="http://127.0.0.1:5500/public/vi/4-eventparticipated/4.6-event6/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://my-cloud-journey-e7994.web.app/4-eventparticipated/4.6-event6/"
+                href="http://127.0.0.1:5500/public/4-eventparticipated/4.6-event6/"
                 />
   </url><url>
-    <loc>https://my-cloud-journey-e7994.web.app/5-workshop/5.6-cleanup/</loc>
+    <loc>http://127.0.0.1:5500/public/6-self-evaluation/</loc>
     <lastmod>2025-09-09T14:41:44+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://my-cloud-journey-e7994.web.app/vi/5-workshop/5.6-cleanup/"
+                href="http://127.0.0.1:5500/public/vi/6-self-evaluation/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://my-cloud-journey-e7994.web.app/5-workshop/5.6-cleanup/"
+                href="http://127.0.0.1:5500/public/6-self-evaluation/"
                 />
   </url><url>
-    <loc>https://my-cloud-journey-e7994.web.app/6-self-evaluation/</loc>
-    <lastmod>2025-09-09T14:41:44+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="https://my-cloud-journey-e7994.web.app/vi/6-self-evaluation/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://my-cloud-journey-e7994.web.app/6-self-evaluation/"
-                />
-  </url><url>
-    <loc>https://my-cloud-journey-e7994.web.app/4-eventparticipated/4.7-event7/</loc>
+    <loc>http://127.0.0.1:5500/public/4-eventparticipated/4.7-event7/</loc>
     <lastmod>2025-11-18T08:30:00+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://my-cloud-journey-e7994.web.app/vi/4-eventparticipated/4.7-event7/"
+                href="http://127.0.0.1:5500/public/vi/4-eventparticipated/4.7-event7/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://my-cloud-journey-e7994.web.app/4-eventparticipated/4.7-event7/"
+                href="http://127.0.0.1:5500/public/4-eventparticipated/4.7-event7/"
                 />
   </url><url>
-    <loc>https://my-cloud-journey-e7994.web.app/7-feedback/</loc>
+    <loc>http://127.0.0.1:5500/public/7-feedback/</loc>
     <lastmod>2025-09-09T14:41:44+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://my-cloud-journey-e7994.web.app/vi/7-feedback/"
+                href="http://127.0.0.1:5500/public/vi/7-feedback/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://my-cloud-journey-e7994.web.app/7-feedback/"
+                href="http://127.0.0.1:5500/public/7-feedback/"
                 />
   </url><url>
-    <loc>https://my-cloud-journey-e7994.web.app/4-eventparticipated/4.8-event8/</loc>
+    <loc>http://127.0.0.1:5500/public/4-eventparticipated/4.8-event8/</loc>
     <lastmod>2025-09-09T14:41:44+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://my-cloud-journey-e7994.web.app/vi/4-eventparticipated/4.8-event8/"
+                href="http://127.0.0.1:5500/public/vi/4-eventparticipated/4.8-event8/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://my-cloud-journey-e7994.web.app/4-eventparticipated/4.8-event8/"
+                href="http://127.0.0.1:5500/public/4-eventparticipated/4.8-event8/"
                 />
   </url><url>
-    <loc>https://my-cloud-journey-e7994.web.app/4-eventparticipated/4.9-event9/</loc>
+    <loc>http://127.0.0.1:5500/public/4-eventparticipated/4.9-event9/</loc>
     <lastmod>2025-11-29T08:30:00+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://my-cloud-journey-e7994.web.app/vi/4-eventparticipated/4.9-event9/"
+                href="http://127.0.0.1:5500/public/vi/4-eventparticipated/4.9-event9/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://my-cloud-journey-e7994.web.app/4-eventparticipated/4.9-event9/"
+                href="http://127.0.0.1:5500/public/4-eventparticipated/4.9-event9/"
                 />
   </url><url>
-    <loc>https://my-cloud-journey-e7994.web.app/categories/</loc>
+    <loc>http://127.0.0.1:5500/public/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://my-cloud-journey-e7994.web.app/vi/categories/"
+                href="http://127.0.0.1:5500/public/vi/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://my-cloud-journey-e7994.web.app/categories/"
+                href="http://127.0.0.1:5500/public/categories/"
                 />
   </url><url>
-    <loc>https://my-cloud-journey-e7994.web.app/tags/</loc>
+    <loc>http://127.0.0.1:5500/public/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://my-cloud-journey-e7994.web.app/vi/tags/"
+                href="http://127.0.0.1:5500/public/vi/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://my-cloud-journey-e7994.web.app/tags/"
+                href="http://127.0.0.1:5500/public/tags/"
                 />
   </url>
 </urlset>

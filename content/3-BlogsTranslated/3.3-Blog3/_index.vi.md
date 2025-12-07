@@ -1,127 +1,111 @@
 ---
-title: "Blog 3"
+title: "Tăng tốc phát triển tác nhân AI với tiện ích mở rộng Nova Act IDE"
 date: "2025-09-09T14:41:44+07:00"
-weight: 1
+weight: 3
 chapter: false
 pre: " <b> 3.3. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+_Tác giả: [Donnie Prakoso](https://aws.amazon.com/blogs/aws/author/donnie/)_
 
-# Bắt đầu với healthcare data lakes: Sử dụng microservices
+_Đăng vào lúc: September 23, 2025_
 
-Các data lake có thể giúp các bệnh viện và cơ sở y tế chuyển dữ liệu thành những thông tin chi tiết về doanh nghiệp và duy trì hoạt động kinh doanh liên tục, đồng thời bảo vệ quyền riêng tư của bệnh nhân. **Data lake** là một kho lưu trữ tập trung, được quản lý và bảo mật để lưu trữ tất cả dữ liệu của bạn, cả ở dạng ban đầu và đã xử lý để phân tích. data lake cho phép bạn chia nhỏ các kho chứa dữ liệu và kết hợp các loại phân tích khác nhau để có được thông tin chi tiết và đưa ra các quyết định kinh doanh tốt hơn.
-
-Bài đăng trên blog này là một phần của loạt bài lớn hơn về việc bắt đầu cài đặt data lake dành cho lĩnh vực y tế. Trong bài đăng blog cuối cùng của tôi trong loạt bài, *“Bắt đầu với data lake dành cho lĩnh vực y tế: Đào sâu vào Amazon Cognito”*, tôi tập trung vào các chi tiết cụ thể của việc sử dụng Amazon Cognito và Attribute Based Access Control (ABAC) để xác thực và ủy quyền người dùng trong giải pháp data lake y tế. Trong blog này, tôi trình bày chi tiết cách giải pháp đã phát triển ở cấp độ cơ bản, bao gồm các quyết định thiết kế mà tôi đã đưa ra và các tính năng bổ sung được sử dụng. Bạn có thể truy cập các code samples cho giải pháp tại Git repo này để tham khảo.
+_Chủ đề: [Amazon Nova](https://aws.amazon.com/blogs/aws/category/artificial-intelligence/amazon-machine-learning/amazon-bedrock/amazon-nova/), [Announcements](https://aws.amazon.com/blogs/aws/category/post-types/announcements/), [Developer Tools](https://aws.amazon.com/blogs/aws/category/developer-tools/), [Launch](https://aws.amazon.com/blogs/aws/category/news/launch/), [News](https://aws.amazon.com/blogs/aws/category/news/)_
 
 ---
 
-## Hướng dẫn kiến trúc
+Hôm nay, tôi rất vui được giới thiệu **Nova Act extension** — một tiện ích giúp đơn giản hóa quá trình xây dựng các tác nhân tự động hóa trình duyệt mà không cần rời khỏi IDE của bạn. Nova Act extension tích hợp trực tiếp vào các IDE như Visual Studio Code (VS Code), Kiro và Cursor, giúp bạn tạo các tác nhân tự động hóa web bằng ngôn ngữ tự nhiên với mô hình [Nova Act](https://nova.amazon.com/act).
 
-Thay đổi chính kể từ lần trình bày cuối cùng của kiến trúc tổng thể là việc tách dịch vụ đơn lẻ thành một tập hợp các dịch vụ nhỏ để cải thiện khả năng bảo trì và tính linh hoạt. Việc tích hợp một lượng lớn dữ liệu y tế khác nhau thường yêu cầu các trình kết nối chuyên biệt cho từng định dạng; bằng cách giữ chúng được đóng gói riêng biệt với microservices, chúng ta có thể thêm, xóa và sửa đổi từng trình kết nối mà không ảnh hưởng đến những kết nối khác. Các microservices được kết nối rời thông qua tin nhắn publish/subscribe tập trung trong cái mà tôi gọi là “pub/sub hub”.
+Dưới đây là hình minh họa nhanh về Nova Act extension trong Visual Studio Code:  
+![Demo animation](/images/Blogs/3.3.1.gif)
 
-Giải pháp này đại diện cho những gì tôi sẽ coi là một lần lặp nước rút hợp lý khác từ last post của tôi. Phạm vi vẫn được giới hạn trong việc nhập và phân tích cú pháp đơn giản của các **HL7v2 messages** được định dạng theo **Quy tắc mã hóa 7 (ER7)** thông qua giao diện REST.
+Nova Act extension được xây dựng dựa trên [Amazon Nova Act SDK (preview)](https://labs.amazon.science/blog/nova-act), bộ SDK dành cho tác nhân tự động hóa trình duyệt. Tiện ích này thay đổi cách xây dựng workflow truyền thống bằng cách loại bỏ việc phải chuyển đổi ngữ cảnh giữa môi trường viết mã và môi trường kiểm thử. Giờ đây, bạn có thể xây dựng, tùy chỉnh và kiểm thử các script agent đạt chuẩn sản xuất — tất cả ngay trong IDE — với các tính năng như tạo mã bằng ngôn ngữ tự nhiên, chỉnh sửa theo cell dạng notebook, và kiểm thử trình duyệt tích hợp. Trải nghiệm thống nhất này giúp tăng tốc phát triển cho các tác vụ như điền form, tự động hóa QA, tìm kiếm và các workflow nhiều bước phức tạp.
 
-**Kiến trúc giải pháp bây giờ như sau:**
-
-> *Hình 1. Kiến trúc tổng thể; những ô màu thể hiện những dịch vụ riêng biệt.*
-
----
-
-Mặc dù thuật ngữ *microservices* có một số sự mơ hồ cố hữu, một số đặc điểm là chung:  
-- Chúng nhỏ, tự chủ, kết hợp rời rạc  
-- Có thể tái sử dụng, giao tiếp thông qua giao diện được xác định rõ  
-- Chuyên biệt để giải quyết một việc  
-- Thường được triển khai trong **event-driven architecture**
-
-Khi xác định vị trí tạo ranh giới giữa các microservices, cần cân nhắc:  
-- **Nội tại**: công nghệ được sử dụng, hiệu suất, độ tin cậy, khả năng mở rộng  
-- **Bên ngoài**: chức năng phụ thuộc, tần suất thay đổi, khả năng tái sử dụng  
-- **Con người**: quyền sở hữu nhóm, quản lý *cognitive load*
+Bạn có thể bắt đầu với Nova Act extension bằng cách mô tả workflow bằng ngôn ngữ tự nhiên để nhanh chóng tạo script agent ban đầu. Sau đó tùy chỉnh bằng chế độ Builder dạng notebook để tích hợp API, dữ liệu, xác thực, rồi kiểm thử bằng công cụ chạy cục bộ mô phỏng điều kiện thực tế — bao gồm debug từng bước trong các workflow dài.
 
 ---
 
-## Lựa chọn công nghệ và phạm vi giao tiếp
+<u>**Bắt đầu với Nova Act extension**</u>
 
-| Phạm vi giao tiếp                        | Các công nghệ / mô hình cần xem xét                                                        |
-| ---------------------------------------- | ------------------------------------------------------------------------------------------ |
-| Trong một microservice                   | Amazon Simple Queue Service (Amazon SQS), AWS Step Functions                               |
-| Giữa các microservices trong một dịch vụ | AWS CloudFormation cross-stack references, Amazon Simple Notification Service (Amazon SNS) |
-| Giữa các dịch vụ                         | Amazon EventBridge, AWS Cloud Map, Amazon API Gateway                                      |
+Trước tiên, tôi cần cài đặt Nova Act extension từ Extension Marketplace của IDE.
 
----
+Tôi đang sử dụng Visual Studio Code, và sau khi chọn Extensions, tôi gõ "Nova Act", chọn tiện ích và nhấn Install.  
+![Demo animation](/images/Blogs/3.3.2.png)
 
-## The pub/sub hub
+Để bắt đầu, tôi cần lấy API key. Tôi truy cập trang [Nova Act](https://nova.amazon.com/act) và làm theo hướng dẫn để lấy API key. Tôi chọn **Set API Key** bằng cách mở Command Palette với:  
+Press <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> / <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>  
+![Demo animation](/images/Blogs/3.3.3.png)
 
-Việc sử dụng kiến trúc **hub-and-spoke** (hay message broker) hoạt động tốt với một số lượng nhỏ các microservices liên quan chặt chẽ.  
-- Mỗi microservice chỉ phụ thuộc vào *hub*  
-- Kết nối giữa các microservice chỉ giới hạn ở nội dung của message được xuất  
-- Giảm số lượng synchronous calls vì pub/sub là *push* không đồng bộ một chiều
+Sau khi nhập API key, tôi có thể thử **Builder Mode**. Đây là chế độ builder dạng notebook chia một script phức tạp thành các cell riêng biệt, giúp kiểm thử và debug từng bước trước khi chuyển sang bước tiếp theo.
 
-Nhược điểm: cần **phối hợp và giám sát** để tránh microservice xử lý nhầm message.
+Tại đây, tôi có thể dùng [Nova Act SDK](https://github.com/aws/nova-act) để xây dựng agent. Bên phải là Live View để xem trước hành động của agent trên trình duyệt và Output panel để xem log, bao gồm quá trình suy nghĩ và hành động của mô hình.  
+![Demo animation](/images/Blogs/3.3.4.png)
 
----
+Để kiểm thử tiện ích, tôi chọn **Run all cells**. Một cửa sổ trình duyệt mới sẽ mở và thực thi dựa trên prompt đã cung cấp.  
+![Demo animation](/images/Blogs/3.3.5.png)
 
-## Core microservice
+Tôi chọn **Fullscreen** để xem cách tự động hóa trình duyệt hoạt động.  
+![Demo animation](/images/Blogs/3.3.6.png)
 
-Cung cấp dữ liệu nền tảng và lớp truyền thông, gồm:  
-- **Amazon S3** bucket cho dữ liệu  
-- **Amazon DynamoDB** cho danh mục dữ liệu  
-- **AWS Lambda** để ghi message vào data lake và danh mục  
-- **Amazon SNS** topic làm *hub*  
-- **Amazon S3** bucket cho artifacts như mã Lambda
+Một tính năng hữu ích khác là tôi có thể chọn một cell trong Output panel để xem log của riêng cell đó — rất hữu ích cho việc debug.  
+![Demo animation](/images/Blogs/3.3.7.png)
 
-> Chỉ cho phép truy cập ghi gián tiếp vào data lake qua hàm Lambda → đảm bảo nhất quán.
+Tôi cũng có thể chọn một template để bắt đầu.  
+![Demo animation](/images/Blogs/3.3.8.png)
 
----
+Ngoài Builder Mode, tôi cũng có thể **chat với Nova Act** để tạo script. Tôi chọn Generate Nova Act Script và tiện ích sẽ mở cửa sổ chat và tự động tạo script cho tôi.  
+![Demo animation](/images/Blogs/3.3.9.png)
 
-## Front door microservice
-
-- Cung cấp API Gateway để tương tác REST bên ngoài  
-- Xác thực & ủy quyền dựa trên **OIDC** thông qua **Amazon Cognito**  
-- Cơ chế *deduplication* tự quản lý bằng DynamoDB thay vì SNS FIFO vì:
-  1. SNS deduplication TTL chỉ 5 phút
-  2. SNS FIFO yêu cầu SQS FIFO
-  3. Chủ động báo cho sender biết message là bản sao
+Sau khi hoàn tất script, tôi chọn **Start Builder Mode**, và tiện ích sẽ tạo file Python ở chế độ Builder. Bạn có thể chuyển đổi linh hoạt giữa Chat và Builder Mode.  
+![Demo animation](/images/Blogs/3.3.10.png)
 
 ---
 
-## Staging ER7 microservice
+Trong giao diện chat, tôi thấy ba chế độ workflow:
 
-- Lambda “trigger” đăng ký với pub/sub hub, lọc message theo attribute  
-- Step Functions Express Workflow để chuyển ER7 → JSON  
-- Hai Lambda:
-  1. Sửa format ER7 (newline, carriage return)
-  2. Parsing logic  
-- Kết quả hoặc lỗi được đẩy lại vào pub/sub hub
+- **Ask**: mô tả tác vụ bằng ngôn ngữ tự nhiên để tạo script
+- **Edit**: tinh chỉnh hoặc tùy chỉnh script
+- **Agent**: chạy, giám sát và tương tác với agent  
+  ![Demo animation](/images/Blogs/3.3.11.png)
+
+Tôi cũng có thể thêm **Context** để cung cấp thông tin liên quan như tài liệu đang mở, hướng dẫn, lỗi, tài nguyên MCP hoặc một ảnh chụp màn hình cửa sổ hiện tại — giúp agent hiểu rõ yêu cầu cụ thể.  
+![Demo animation](/images/Blogs/3.3.12.png)
+
+Tiện ích còn cung cấp nhiều template dựng sẵn khi nhập dấu `/` trong cửa sổ chat.  
+![Demo animation](/images/Blogs/3.3.13.png)
+
+Các template bao gồm:
+
+- **/shopping**: tự động hóa tác vụ mua sắm
+- **/extract**: trích xuất dữ liệu
+- **/search**: tìm kiếm và thu thập thông tin
+- **/qa**: tự động hóa kiểm thử
+- **/formfilling**: điền form và nhập liệu
+
+Nova Act extension trở thành một công cụ **full-stack agent builder**, cho phép bạn prototyping, tùy chỉnh và kiểm thử toàn diện — tất cả trong một IDE.
 
 ---
 
-## Tính năng mới trong giải pháp
+<u>**Những điều cần biết**</u>
 
-### 1. AWS CloudFormation cross-stack references
-Ví dụ *outputs* trong core microservice:
-```yaml
-Outputs:
-  Bucket:
-    Value: !Ref Bucket
-    Export:
-      Name: !Sub ${AWS::StackName}-Bucket
-  ArtifactBucket:
-    Value: !Ref ArtifactBucket
-    Export:
-      Name: !Sub ${AWS::StackName}-ArtifactBucket
-  Topic:
-    Value: !Ref Topic
-    Export:
-      Name: !Sub ${AWS::StackName}-Topic
-  Catalog:
-    Value: !Ref Catalog
-    Export:
-      Name: !Sub ${AWS::StackName}-Catalog
-  CatalogArn:
-    Value: !GetAtt Catalog.Arn
-    Export:
-      Name: !Sub ${AWS::StackName}-CatalogArn
+- **IDE hỗ trợ**: VS Code, Cursor, Kiro (sẽ mở rộng thêm)
+- **Mã nguồn mở**: Apache 2.0
+- **Miễn phí**: Không tính phí khi sử dụng
+
+Bắt đầu bằng cách cài đặt extension trong IDE hoặc xem tài liệu tại GitHub:  
+👉 https://github.com/aws/nova-act-extension
+
+---
+
+## Authors
+
+<div style="display:flex; gap:20px; margin-bottom:30px;">
+  <img src="/images/Blogs/3.3.0.jpeg" alt="George’son Tib." style="width:110px; border-radius:4px;">
+  <div>
+    <h3>Donnie Prakoso</h3>
+    <p>
+     Donnie Prakoso là một kỹ sư phần mềm, barista “tự phong”, và Principal Developer Advocate tại AWS. Với hơn 17 năm kinh nghiệm trong ngành công nghệ, từ viễn thông, ngân hàng đến các startup, anh hiện tập trung vào việc hỗ trợ các nhà phát triển hiểu và ứng dụng nhiều công nghệ khác nhau để biến ý tưởng thành hiện thực. Anh yêu cà phê và thích thảo luận mọi chủ đề — từ microservices cho đến AI/ML.
+    </p>
+
+  </div>
+</div>

@@ -7,8 +7,10 @@ pre: " <b> 3.1. </b> "
 ---
 
 _Author: Training and Certification Blog Editor_
+
 _Published At: September 23, 2025_
-_Categories: Announcements, AWS Training and Certification Permalink_
+
+_Categories: [Announcements](https://aws.amazon.com/blogs/training-and-certification/category/post-types/announcements/), [AWS Training and Certification](https://aws.amazon.com/blogs/training-and-certification/category/aws-training-and-certification/)_
 
 ---
 

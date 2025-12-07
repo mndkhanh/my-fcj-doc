@@ -6,6 +6,14 @@ chapter: false
 pre: " <b> 3.1. </b> "
 ---
 
+_Tác giả: Training and Certification Blog Editor_
+
+_Đăng vào lúc: 23/09/2025_
+
+_Chủ đề: [Announcements](https://aws.amazon.com/blogs/training-and-certification/category/post-types/announcements/), [AWS Training and Certification](https://aws.amazon.com/blogs/training-and-certification/category/aws-training-and-certification/)_
+
+---
+
 Chào mừng bạn đến với phiên bản tháng 9 của bản cập nhật hàng tháng, nơi chúng tôi giới thiệu các khóa đào tạo và chứng chỉ mới nhất—giúp bạn và đội ngũ của bạn luôn được trang bị những kỹ năng AWS hiện đại nhất.  
 Nguồn: [AWS Blog](https://aws.amazon.com/blogs/training-and-certification/september-2025-new-offerings/)
 

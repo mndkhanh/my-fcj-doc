@@ -27,7 +27,7 @@ chapter: false
 
 &emsp; **Thời gian thực tập:** Từ ngày 06/08/2025 đến 31/12/2025
 
-![Ảnh đại diện của bạn](/images/avatar.png)
+![Your profile picture](/images/avatar.jpg)
 
 ### Nội dung báo cáo
 

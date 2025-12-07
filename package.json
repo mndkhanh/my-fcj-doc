@@ -3,6 +3,6 @@
     "nodemon": "^3.1.11"
   },
   "scripts": {
-    "dev": "nodemon --watch content --ext .md --exec \"hugo\""
+    "dev": "nodemon --watch content --watch config.toml --ext .md --exec \"hugo\""
   }
 }

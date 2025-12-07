@@ -1,4 +1,4 @@
-baseURL = "https://my-cloud-journey-e7994.web.app/"
+baseURL = "http://127.0.0.1:5500/public/"
 relativeURLs = true
 canonifyURLs = true
 

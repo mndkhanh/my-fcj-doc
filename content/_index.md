@@ -19,7 +19,7 @@ chapter: false
 
 &emsp; **Major:** Software Engineering
 
-&emsp; **Class:** AWS
+&emsp; **Class:** AWS092025
 
 &emsp; **Internship Company:** Amazon Web Services Vietnam Co., Ltd.
 
