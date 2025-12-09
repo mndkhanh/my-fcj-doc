@@ -1,4 +1,5 @@
 ---
+
 title: "AgentCore Memory"
 weight: 3
 chapter: false
@@ -26,11 +27,11 @@ Set the name for the memory that AgentCore will use.
 The number of days detailed conversation history is stored.
 For this demo, you can keep the default **90 days**.
 
-![memory](/images/5-Workshop/5.3-S3-vpc/memory.png)
+![memory](/aws/static/images/5-Workshop/5.3-S3-vpc/memory.png)
 
 ## 2. Types of Memory in AgentCore
 
-![memory](/images/5-Workshop/5.3-S3-vpc/typememory.png)
+![memory](/aws/static/images/5-Workshop/5.3-S3-vpc/typememory.png)
 
 ### 1. Summarization – Conversation Summaries
 

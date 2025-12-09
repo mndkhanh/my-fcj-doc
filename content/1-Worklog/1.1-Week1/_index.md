@@ -1,6 +1,6 @@
 ---
 title: "Week 1 Worklog"
-date: "2025-09-09T14:41:44+07:00"
+date: 2024-01-01T00:00:00+07:00
 weight: 1
 chapter: false
 pre: " <b> 1.1. </b> "
@@ -10,57 +10,59 @@ pre: " <b> 1.1. </b> "
 ### Week 1 Objectives:
 
 * Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Understand basic AWS services, how to use console & CLI.
 
 ### Tasks to be carried out this week:
 | Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2 | - Get acquainted with FCJ members, mentors, and supervisors. Learned about each member's role and responsibilities in the project team. <br> - Read and summarized internship unit rules and regulations including working hours, attendance policy, communication channels, task reporting, and security guidelines. <br> - Understood expectations for weekly progress reports and deliverables. | 06/09/2025 | 13/09/2025 | |
-| 3 | - Learned about **AWS Global Infrastructure** (Regions, Availability Zones, Edge Locations). <br> - Studied key **AWS Service Categories**: <br>&emsp; + **Compute:** EC2, Lambda, Elastic Beanstalk, Auto Scaling. <br>&emsp; + **Storage:** S3 (standard, IA, Glacier), EBS, EFS. <br>&emsp; + **Networking:** VPC, Subnets, Internet Gateway, NAT Gateway, Route 53. <br>&emsp; + **Database:** RDS (MySQL, PostgreSQL), DynamoDB, Aurora. <br>&emsp; + **Security & Identity:** IAM (Users, Groups, Roles, Policies), KMS. <br>&emsp; + **Monitoring & Management:** CloudWatch (metrics & alarms), CloudTrail (logs), Trusted Advisor. <br> - Took detailed notes of use cases, pricing considerations, and real-world examples. | 06/09/2025 | 13/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 4 | - Successfully created **AWS Free Tier** account, enabled **MFA** for root user for better security. <br> - Configured **Billing Alerts** in CloudWatch to monitor cost usage. <br> - Learned navigation of **AWS Management Console**, explored service categories, search bar, and pinned favorite services. <br> - Installed and configured **AWS CLI** locally: <br>&emsp; + Generated **Access Key & Secret Key** from IAM. <br>&emsp; + Set **Default Region** and **Output Format** using `aws configure`. <br>&emsp; + Verified configuration with `aws sts get-caller-identity`. <br> - **Practice:** Ran commands like `aws s3 ls`, `aws ec2 describe-regions`, `aws ec2 describe-instances` to confirm CLI works correctly. | 06/09/2025 | 13/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 5 | - Learned about **Amazon EC2** core concepts: <br>&emsp; + **Instance Types:** General Purpose, Compute Optimized, Memory Optimized, Storage Optimized. <br>&emsp; + **AMI:** Choosing right image (Amazon Linux 2, Ubuntu, Windows Server). <br>&emsp; + **EBS:** gp3, io2, sc1, and their performance characteristics. <br>&emsp; + **Key Pairs:** Importance for SSH authentication. <br>&emsp; + **Security Groups:** Inbound and Outbound rule configuration. <br> - Studied **Elastic IP** concept for static public IPs. <br> - Learned different ways to connect to EC2: <br>&emsp; + SSH from local terminal. <br>&emsp; + Session Manager (browser-based). <br>&emsp; + EC2 Instance Connect. | 06/09/2025 | 13/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 6 | - **Hands-on Practice:** <br>&emsp; + Launched a **t2.micro** EC2 instance under Free Tier in a chosen region. <br>&emsp; + Generated key pair, downloaded `.pem` file, and updated permissions (`chmod 400 key.pem`). <br>&emsp; + Successfully connected to EC2 via SSH using terminal command `ssh -i key.pem ec2-user@<public-ip>`. <br>&emsp; + Created new EBS volume, attached it to instance, formatted and mounted it (`mkfs -t xfs /dev/xvdf`). <br>&emsp; + Verified data persistence after instance reboot. <br>&emsp; + Took screenshots for documentation and future reference. <br> - Learned how to stop, start, and terminate EC2 instances and the difference between them. | 06/09/2025 | 13/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 09/08/2025 | 09/08/2025      |
+| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 09/09/2025 | 09/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp;                                                                | 09/10/2025 | 09/10/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 5   | - Learn basic budget types: <br>&emsp; + Cost budget <br>&emsp; + Usage budget <br>&emsp; + Saving plans budget <br>&emsp; + Reservation budget <br>                                                   | 09/11/2025 | 09/11/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 6   | - **Learn and practice:** <br>&emsp; + AWS support packages <br>&emsp; + Change AWS support packages <br>&emsp; + Manage support request                                                               | 09/12/2025 | 09/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
 
 ### Week 1 Achievements:
 
-* Gained a solid understanding of **AWS Cloud Computing** concepts and mastered the basic service groups:  
-  * **Compute** – EC2 (virtual servers), Lambda (serverless), Auto Scaling, Elastic Beanstalk.  
-  * **Storage** – S3 (object storage), EBS (block storage), EFS (file storage), lifecycle management policies.  
-  * **Networking** – VPC, Subnets, Internet Gateway, NAT Gateway, Route Tables, Security Groups, Route 53.  
-  * **Database** – RDS (MySQL, PostgreSQL), DynamoDB (NoSQL), Aurora, database backup & restore strategies.  
-  * **Monitoring & Security** – IAM (users, groups, roles), CloudWatch (metrics & alarms), CloudTrail (logs).  
+* Understood what AWS is and mastered the basic service groups:
+* Compute: Used to run applications, process data, create virtual server environments or containers.
+    Main services:
+    EC2 (Elastic Compute Cloud): Virtual servers running on AWS (like VPS but more flexible).
+    Lambda: Run serverless code, no server management needed, pay per execution.
+    ECS/EKS (Elastic Container Service / Elastic Kubernetes Service): Manage containers (Docker/K8s).
+    Elastic Beanstalk: Automatic app deployment (like PaaS)
+* Storage: Store data, from small files to Big Data.
+    S3 (Simple Storage Service): Object storage – used for files, images, videos.
+    EBS (Elastic Block Store): Block storage (used with EC2 like hard drives).
+    EFS (Elastic File System): File system storage, multiple machines can access simultaneously.
+    Glacier: Long-term storage, cheap (for backup/archive).
+* Networking:
+    Connect services, secure and distribute applications.
+    VPC (Virtual Private Cloud): Create private virtual network in AWS (like private data center).
+    Route 53: DNS service, domain management.
+    CloudFront: CDN distributes content faster to global users.
+    ELB (Elastic Load Balancer): Load balancing between multiple servers.
+    API Gateway: Manage and secure APIs.
+* Database:
+    Store and manage structured/unstructured data.
+    RDS (Relational Database Service): Manage relational databases (MySQL, PostgreSQL, Oracle, SQL Server).
+    Aurora: AWS-developed database, MySQL/PostgreSQL compatible, faster than RDS.
+    DynamoDB: NoSQL Database (non-relational), high speed, auto-scaling.
+    Redshift: Data warehouse for big data analysis.
+    ElastiCache: Data caching (Redis/Memcached).
 
-* Successfully created and configured an **AWS Free Tier account**, including:  
-  * Enabled **MFA** on the root account for added security.  
-  * Configured **Billing Alerts** to avoid unexpected charges.  
-  * Set up a personal IAM user with administrator access for safer daily operations.  
+* Successfully created and configured AWS Free Tier account.
 
-* Became familiar with the **AWS Management Console**:  
-  * Navigated through service categories and pinned frequently used services.  
-  * Explored EC2, S3, VPC, and IAM dashboards.  
-  * Learned to locate documentation and pricing calculators from the console.  
+* Became familiar with AWS Management Console and learned how to find, access, and use services via web interface.
 
-* Installed and configured **AWS CLI** on the computer, including:  
-  * Generated **Access Key** & **Secret Key** from IAM.  
-  * Configured **Default Region** and **Output Format** with `aws configure`.  
-  * Verified identity using `aws sts get-caller-identity`.  
-  * Stored credentials securely and learned how to rotate keys if needed.  
+* Installed and configured AWS CLI on computer including:
+  * Access Key
+  * Secret Key
+  * Default Region
 
-* Used AWS CLI to perform essential operations such as:  
-  * Retrieve account information and CLI configuration.  
-  * List available AWS regions (`aws ec2 describe-regions`).  
-  * View EC2 instances, AMIs, and security groups.  
-  * Create and manage key pairs for SSH access.  
-  * Check running services and their states.  
-
-* Acquired the ability to **combine AWS Management Console and CLI**:  
-  * Launched resources from the Console and monitored/managed them with CLI.  
-  * Practiced stopping/starting EC2 instances from CLI and verifying status in Console.  
-  * Understood advantages of automation and scripting for repeatable tasks.  
-
-* Documented each step with **screenshots and notes** for easy reference and reproducibility.  
-
-* Learned about **cost optimization and security best practices** as part of AWS Well-Architected Framework.  
-
-* Gained confidence to explore more advanced AWS services in the future such as S3 static website hosting, VPC design, and load balancing.
+* Used AWS CLI to perform basic operations such as:
+  * Check account & configuration information
+  * Retrieve list of regions
+  * View EC2 service
+  * Create and manage key pairs
+  * Check information about running services
