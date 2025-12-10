@@ -1,113 +1,202 @@
 ---
 title: "Proposal"
-date: "2025-09-09T14:41:44+07:00"
 weight: 2
 chapter: false
 pre: " <b> 2. </b> "
 ---
 
+# APT Magic
 
-In this section, you need to summarize the contents of the workshop that you **plan** to conduct.
-
-# IoT Weather Platform for Lab Research
-## A Unified AWS Serverless Solution for Real-Time Weather Monitoring
+## A Serverless AI Platform for Personalized Image Generation and Social Interaction
 
 ### 1. Executive Summary
-The IoT Weather Platform is designed for the ITea Lab team in Ho Chi Minh City to enhance weather data collection and analysis. It supports up to 5 weather stations, with potential scalability to 10-15, utilizing Raspberry Pi edge devices with ESP32 sensors to transmit data via MQTT. The platform leverages AWS Serverless services to deliver real-time monitoring, predictive analytics, and cost efficiency, with access restricted to 5 lab members via Amazon Cognito.
+
+**APT Magic** is a serverless AI-powered web application designed to enable users to generate, personalize, and share artistic content such as AI-generated images. The platform integrates with AI foundation models via **Amazon Bedrock** and provides a seamless web experience using **Next.js (SSR)** hosted on **AWS Amplify**.
+
+The MVP version focuses on real-time image generation and sharing, while the **Future Design** aims to scale with **Bedrock agentCore/SageMaker Inference**, **SQS/SNS**, **Secret Manager & CloudTrail** and **AWS MLOps pipelines** for advanced model orchestration and automation.
+
+APT Magic is currently developed as a modern, cost-efficient, and secure AWS-native architecture for small to medium user bases, with planned expansion into enterprise-grade AI orchestration.
+
+---
 
 ### 2. Problem Statement
-### What’s the Problem?
-Current weather stations require manual data collection, becoming unmanageable with multiple units. There is no centralized system for real-time data or analytics, and third-party platforms are costly and overly complex.
 
-### The Solution
-The platform uses AWS IoT Core to ingest MQTT data, AWS Lambda and API Gateway for processing, Amazon S3 for storage (including a data lake), and AWS Glue Crawlers and ETL jobs to extract, transform, and load data from the S3 data lake to another S3 bucket for analysis. AWS Amplify with Next.js provides the web interface, and Amazon Cognito ensures secure access. Similar to Thingsboard and CoreIoT, users can register new devices and manage connections, though this platform operates on a smaller scale and is designed for private use. Key features include real-time dashboards, trend analysis, and low operational costs.
+#### What’s the Problem?
 
-### Benefits and Return on Investment
-The solution establishes a foundational resource for lab members to develop a larger IoT platform, serving as a study resource, and provides a data foundation for AI enthusiasts for model training or analysis. It reduces manual reporting for each station via a centralized platform, simplifying management and maintenance, and improves data reliability. Monthly costs are $0.66 USD per the AWS Pricing Calculator, with a 12-month total of $7.92 USD. All IoT equipment costs are covered by the existing weather station setup, eliminating additional development expenses. The break-even period of 6-12 months is achieved through significant time savings from reduced manual work.
+Most AI image generation platforms are costly, rely on opaque third-party APIs, and offer limited personalization.  
+Developers and creators often face high latency, lack of transparent model management, and limited control over user data security.
+
+#### The Solution
+
+APT Magic leverages **AWS serverless architecture** to deliver:
+
+- Real-time AI image generation through **Amazon Bedrock Stability AI** models.
+- Secure user authentication and content management using **Amazon Cognito** and **DynamoDB**.
+- Scalable API handling via **AWS Lambda** and **API Gateway**.
+- Low-latency global delivery with **CloudFront CDN** and **WAF protection**.
+
+Future upgrades will include **SQS/SNS decoupling**, **Bedrock AgentCore/SageMaker Inference pipelines**, and cost-efficient CI/CD via **CloudFormation**. transforming APT Magic into a fully automated MLOps platform.
+
+---
 
 ### 3. Solution Architecture
-The platform employs a serverless AWS architecture to manage data from 5 Raspberry Pi-based stations, scalable to 15. Data is ingested via AWS IoT Core, stored in an S3 data lake, and processed by AWS Glue Crawlers and ETL jobs to transform and load it into another S3 bucket for analysis. Lambda and API Gateway handle additional processing, while Amplify with Next.js hosts the dashboard, secured by Cognito. The architecture is detailed below:
 
-![IoT Weather Station Architecture](/images/2-Proposal/edge_architecture.jpeg)
+#### **MVP Architecture**
 
-![IoT Weather Platform Architecture](/images/2-Proposal/platform_architecture.jpeg)
+The MVP is a **fully serverless architecture**, focusing on scalability, maintainability, and cost-effectiveness.
 
-### AWS Services Used
-- **AWS IoT Core**: Ingests MQTT data from 5 stations, scalable to 15.
-- **AWS Lambda**: Processes data and triggers Glue jobs (two functions).
-- **Amazon API Gateway**: Facilitates web app communication.
-- **Amazon S3**: Stores raw data in a data lake and processed outputs (two buckets).
-- **AWS Glue**: Crawlers catalog data, and ETL jobs transform and load it.
-- **AWS Amplify**: Hosts the Next.js web interface.
-- **Amazon Cognito**: Secures access for lab users.
+**Core AWS Services:**
 
-### Component Design
-- **Edge Devices**: Raspberry Pi collects and filters sensor data, sending it to IoT Core.
-- **Data Ingestion**: AWS IoT Core receives MQTT messages from the edge devices.
-- **Data Storage**: Raw data is stored in an S3 data lake; processed data is stored in another S3 bucket.
-- **Data Processing**: AWS Glue Crawlers catalog the data, and ETL jobs transform it for analysis.
-- **Web Interface**: AWS Amplify hosts a Next.js app for real-time dashboards and analytics.
-- **User Management**: Amazon Cognito manages user access, allowing up to 5 active accounts.
+- **Route53 + CloudFront + WAF** — Secure global access and caching.
+- **Amplify (Next.js SSR)** — Hosts the frontend and server-side rendering layer.
+- **API Gateway + Lambda Functions** — Manage backend logic (image processing, subscription, post APIs).
+- **Amazon Cognito** — User authentication and access control.
+- **Amazon S3 + DynamoDB** — Data persistence and image storage.
+- **Amazon Bedrock** — Integrates foundation model (Stability AI) for image generation.
+- **CloudWatch** — Logging, and monitoring.
+
+**Security**
+
+- **WAF + IAM policies** for traffic filtering and role-based access control.
+
+![APT Magic MVP Architecture](/images/2-Proposal/aptMagic_mvp.jpg)
+
+---
+
+#### **Future Design (Enhanced Architecture)**
+
+In the next phase, APT Magic will evolve into an **AI orchestration platform**, introducing new layers for automation, resilience, and model lifecycle management.
+
+**New Services to be Added:**
+
+- **Amazon SQS** — For reliable message queuing between async Lambda tasks.
+- **Amazon SNS** — For real-time event notifications to users or administrators.
+- **Amazon ElastiCache (Redis)** — For rate limiting and caching of frequent inference requests.
+- **Amazon Bedrock AgentCore** — For hosting custom fine-tuned models and managing model endpoints.
+
+- **CI/CD**
+  - **CloudFormation** for infrastructure deployment and automation.
+
+![APT Magic Future Architecture](/images/2-Proposal/diagram_architecture.jpg)
+
+---
 
 ### 4. Technical Implementation
-**Implementation Phases**
-This project has two parts—setting up weather edge stations and building the weather platform—each following 4 phases:
-- Build Theory and Draw Architecture: Research Raspberry Pi setup with ESP32 sensors and design the AWS serverless architecture (1 month pre-internship)
-- Calculate Price and Check Practicality: Use AWS Pricing Calculator to estimate costs and adjust if needed (Month 1).
-- Fix Architecture for Cost or Solution Fit: Tweak the design (e.g., optimize Lambda with Next.js) to stay cost-effective and usable (Month 2).
-- Develop, Test, and Deploy: Code the Raspberry Pi setup, AWS services with CDK/SDK, and Next.js app, then test and release to production (Months 2-3).
 
-**Technical Requirements**
-- Weather Edge Station: Sensors (temperature, humidity, rainfall, wind speed), a microcontroller (ESP32), and a Raspberry Pi as the edge device. Raspberry Pi runs Raspbian, handles Docker for filtering, and sends 1 MB/day per station via MQTT over Wi-Fi.
-- Weather Platform: Practical knowledge of AWS Amplify (hosting Next.js), Lambda (minimal use due to Next.js), AWS Glue (ETL), S3 (two buckets), IoT Core (gateway and rules), and Cognito (5 users). Use AWS CDK/SDK to code interactions (e.g., IoT Core rules to S3). Next.js reduces Lambda workload for the fullstack web app.
+#### **Implementation Phases**
+
+**Phase 1 – MVP Deployment (Completed / Current)**
+
+- Implement Amplify (Next.js SSR) + API Gateway + Lambda.
+- Integrate Bedrock Stability AI API.
+- Deploy CI/CD via Gitlab CI/CD.
+- Enable user authentication (Cognito) and storage (S3 + DynamoDB).
+- Log and Monitor via Cloudwatch
+
+**Phase 2 – Future Design Expansion**
+
+- Introduce SQS/SNS to decouple.
+- Add ElastiCache for request throttling and caching.
+- Integrate Bedrock Agent to enhance AI Pipelines
+- Connect GitLab Runner with CodeBuild for unified CI/CD.
+
+---
 
 ### 5. Timeline & Milestones
-**Project Timeline**
-- Pre-Internship (Month 0): 1 month for planning and old station review.
-- Internship (Months 1-3): 3 months.
-    - Month 1: Study AWS and upgrade hardware.
-    - Month 2: Design and adjust architecture.
-    - Month 3: Implement, test, and launch.
-- Post-Launch: Up to 1 year for research.
 
-### 6. Budget Estimation
-You can find the budget estimation on the [AWS Pricing Calculator](https://calculator.aws/#/estimate?id=621f38b12a1ef026842ba2ddfe46ff936ed4ab01).  
-Or you can download the [Budget Estimation File](../attachments/budget_estimation.pdf).
+| Phase                               | Description                                                                                                          | Estimated Duration | Deployment Milestone                                      |
+| ----------------------------------- | -------------------------------------------------------------------------------------------------------------------- | ------------------ | --------------------------------------------------------- |
+| **Month 1: Setup & Core API**       | Deploy infrastructure (IaC), Cognito, API Gateway, DynamoDB, and foundational Lambda functions.                      | 4 Weeks            | Core Backend operational, Auth/User Management completed. |
+| **Month 2: AI Integration**         | Integrate Claude Haiku 3 LLM on Amazon Bedrock (Stability AI), Replicate API, complete _Image Processing_ functions. | 4 Weeks            | Successful end-to-end AI image processing demo.           |
+| **Month 3: Front-end & CI/CD**      | Develop UI/UX (Amplify/Next.js), finalize CI/CD pipelines, and configure Monitoring/Security (CloudWatch/WAF).       | 4 Weeks            | Full platform ready for user testing.                     |
+| **Month 4: Optimization & Go-Live** | Perform performance testing (Stress Test), cost optimization, and Production deployment.                             | 4 Weeks            | **Go-Live** (Official product launch).                    |
 
-### Infrastructure Costs
-- AWS Services:
-    - AWS Lambda: $0.00/month (1,000 requests, 512 MB storage).
-    - S3 Standard: $0.15/month (6 GB, 2,100 requests, 1 GB scanned).
-    - Data Transfer: $0.02/month (1 GB inbound, 1 GB outbound).
-    - AWS Amplify: $0.35/month (256 MB, 500 ms requests).
-    - Amazon API Gateway: $0.01/month (2,000 requests).
-    - AWS Glue ETL Jobs: $0.02/month (2 DPUs).
-    - AWS Glue Crawlers: $0.07/month (1 crawler).
-    - MQTT (IoT Core): $0.08/month (5 devices, 45,000 messages).
+---
 
-Total: $0.7/month, $8.40/12 months
+### 6. Cost Estimate (AWS Pricing Estimate)
 
-- Hardware: $265 one-time (Raspberry Pi 5 and sensors).
+#### Total Cost
+
+- **Monthly:** $9.80
+- **Upfront:** $0.00
+- **12 Months:** $117.60
+
+---
+
+#### Service Overview
+
+| Service              | Region                   | Monthly Cost | Upfront   | 12-Month Cost | Notes                                                        |
+| -------------------- | ------------------------ | ------------ | --------- | ------------- | ------------------------------------------------------------ |
+| Amazon Route 53      | Asia Pacific (Singapore) | $0.50        | $0.00     | $6.00         | 1 Hosted Zone, 1 domain, 1 linked VPC                        |
+| Amazon CloudFront    | Asia Pacific (Singapore) | $0.00        | $0.00     | $0.00         | No specific configuration                                    |
+| AWS WAF              | Asia Pacific (Singapore) | $6.00        | $0.00     | $72.00        | 1 Web ACL; 1 rule per ACL                                    |
+| AWS Amplify          | Asia Pacific (Singapore) | $0.00        | $0.00     | $0.00         | Build instance: Standard (8GB/4vCPU); request duration 500ms |
+| AWS CloudFormation   | Asia Pacific (Singapore) | $0.00        | $0.00     | $0.00         | No extensions; no operations                                 |
+| Amazon API Gateway   | Asia Pacific (Singapore) | $0.13        | $0.00     | $1.59         | 10k requests/month; WebSocket message 1KB; request size 30KB |
+| AWS Lambda           | Asia Pacific (Singapore) | $1.67        | $0.00     | $20.04        | 1 million invokes; x86; 512MB ephemeral storage              |
+| Amazon CloudWatch    | Asia Pacific (Singapore) | $0.85        | $0.00     | $10.22        | 1 metric; 0.5GB logs in; 0.5GB logs to S3                    |
+| S3 Standard          | Asia Pacific (Singapore) | $0.23        | $0.00     | $2.76         | 10GB storage; 20k PUT; 40k GET                               |
+| DynamoDB On-Demand   | Asia Pacific (Singapore) | $0.42        | $0.00     | $5.04         | 1GB storage; 1KB item; on-demand mode                        |
+| **Total (Estimate)** | —                        | **$9.80**    | **$0.00** | **$117.60**   | Based on AWS Pricing Calculator                              |
+
+---
+
+#### Metadata
+
+- **Currency:** USD
+- **Locale:** en_US
+- **Created On:** 12/9/2025
+- **Share URL:** [AWS Calculator Link](https://calculator.aws/#/estimate?id=f8f785603d5dea16be2d60ad39e4733fc352a108)
+- **Legal Disclaimer:** AWS Pricing Calculator provides estimates only; actual costs may vary based on usage.
+
+---
+
+#### AI Model Pricing
+
+| Model                      | Resolution / Token Usage  | Quality  | Price per Request (USD) | Notes                                                    |
+| -------------------------- | ------------------------- | -------- | ----------------------- | -------------------------------------------------------- |
+| Titan Image Generator v2   | < 512×512                 | Standard | 0.008                   | Fixed price per 1 image                                  |
+| Titan Image Generator v2   | < 512×512                 | Premium  | 0.01                    | Fixed price per 1 image                                  |
+| Titan Image Generator v2   | > 1024×1024               | Standard | 0.01                    | Fixed price per 1 image                                  |
+| Titan Image Generator v2   | > 1024×1024               | Premium  | 0.012                   | Fixed price per 1 image                                  |
+| Stable Diffusion 3.5 Large | Any                       | N/A      | 0.08                    | Fixed price per 1 image                                  |
+| Claude (text + image)      | 40 input tokens + 1 image | N/A      | 0.00195                 | Price for 1 request including text and 1 image 1024×1024 |
+
+#### Additional Options
+
+| Mode     | Augmentation | Price (USD) |
+| -------- | ------------ | ----------- |
+| text→img | no augment   | 0.08        |
+| text→img | with augment | 0.08195     |
+| img→img  | no augment   | 0.012       |
+| img→img  | with augment | 0.094       |
+
+---
 
 ### 7. Risk Assessment
-#### Risk Matrix
-- Network Outages: Medium impact, medium probability.
-- Sensor Failures: High impact, low probability.
-- Cost Overruns: Medium impact, low probability.
 
-#### Mitigation Strategies
-- Network: Local storage on Raspberry Pi with Docker.
-- Sensors: Regular checks and spares.
-- Cost: AWS budget alerts and optimization.
+| Risk                           | Impact | Probability | Mitigation                                       |
+| ------------------------------ | ------ | ----------- | ------------------------------------------------ |
+| AI model inference latency     | Medium | High        | Use ElastiCache + SQS/SNS for async handling     |
+| Cost increase from model calls | High   | Medium      | Bedrock usage control, SageMaker autoscaling     |
+| CI/CD misconfigurations        | Medium | Low         | CloudFormation rollback policies                 |
+| Security vulnerabilities       | High   | Medium      | WAF, GuardDuty, PrivateLink, IAM least privilege |
+| Third-party API dependency     | Medium | Medium      | Bedrock fallback to S3-stored inference results  |
 
-#### Contingency Plans
-- Revert to manual methods if AWS fails.
-- Use CloudFormation for cost-related rollbacks.
+---
 
 ### 8. Expected Outcomes
-#### Technical Improvements: 
-Real-time data and analytics replace manual processes.  
-Scalable to 10-15 stations.
-#### Long-term Value
-1-year data foundation for AI research.  
-Reusable for future projects.
+
+#### Technical Outcomes:
+
+- Complete serverless AI image generation workflow with secure CI/CD.
+- Modular orchestration enabling rapid MLOps integration.
+- Improved latency and reliability via caching and async workflows.
+
+#### Long-Term Value:
+
+- A foundation for **AI as a Service (AIaaS)** platform expansion.
+- Ready-to-scale **MLOps framework** with automated retraining.
+- Reusable cloud infrastructure for future AI products.
+
+---

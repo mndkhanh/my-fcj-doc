@@ -103,19 +103,6 @@
                 href="http://127.0.0.1:5500/public/vi/5-workshop/5.4-agent-core-run/5.4.2-call-agentcore/"
                 />
   </url><url>
-    <loc>http://127.0.0.1:5500/public/vi/2-proposal/</loc>
-    <lastmod>2025-09-09T14:41:44+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://127.0.0.1:5500/public/2-proposal/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="http://127.0.0.1:5500/public/vi/2-proposal/"
-                />
-  </url><url>
     <loc>http://127.0.0.1:5500/public/vi/4-eventparticipated/4.2-event2/</loc>
     <lastmod>2025-09-09T14:41:44+07:00</lastmod>
     <xhtml:link
@@ -165,6 +152,18 @@
                 rel="alternate"
                 hreflang="vi"
                 href="http://127.0.0.1:5500/public/vi/5-workshop/5.2-prerequiste/"
+                />
+  </url><url>
+    <loc>http://127.0.0.1:5500/public/vi/2-proposal/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://127.0.0.1:5500/public/2-proposal/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://127.0.0.1:5500/public/vi/2-proposal/"
                 />
   </url><url>
     <loc>http://127.0.0.1:5500/public/vi/4-eventparticipated/4.3-event3/</loc>

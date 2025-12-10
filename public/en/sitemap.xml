@@ -129,19 +129,6 @@
                 href="http://127.0.0.1:5500/public/3-blogstranslated/3.2-blog2/"
                 />
   </url><url>
-    <loc>http://127.0.0.1:5500/public/2-proposal/</loc>
-    <lastmod>2025-09-09T14:41:44+07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="http://127.0.0.1:5500/public/vi/2-proposal/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://127.0.0.1:5500/public/2-proposal/"
-                />
-  </url><url>
     <loc>http://127.0.0.1:5500/public/1-worklog/1.2-week2/</loc>
     <lastmod>2024-01-01T00:00:00+07:00</lastmod>
     <xhtml:link
@@ -165,6 +152,18 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://127.0.0.1:5500/public/5-workshop/5.2-prerequiste/"
+                />
+  </url><url>
+    <loc>http://127.0.0.1:5500/public/2-proposal/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://127.0.0.1:5500/public/vi/2-proposal/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://127.0.0.1:5500/public/2-proposal/"
                 />
   </url><url>
     <loc>http://127.0.0.1:5500/public/4-eventparticipated/4.3-event3/</loc>
