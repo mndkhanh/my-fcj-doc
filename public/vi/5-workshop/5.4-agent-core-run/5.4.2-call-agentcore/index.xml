@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Gọi AgentCore on Báo cáo thực tập</title>
-    <link>http://127.0.0.1:5500/public/vi/5-workshop/5.4-agent-core-run/5.4.2-call-agentcore/</link>
+    <link>mndkhanh.github.io/my-fcj-doc/public/vi/5-workshop/5.4-agent-core-run/5.4.2-call-agentcore/</link>
     <description>Recent content in Gọi AgentCore on Báo cáo thực tập</description>
     <generator>Hugo</generator>
     <language>vi</language>
-    <atom:link href="http://127.0.0.1:5500/public/vi/5-workshop/5.4-agent-core-run/5.4.2-call-agentcore/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="mndkhanh.github.io/my-fcj-doc/public/vi/5-workshop/5.4-agent-core-run/5.4.2-call-agentcore/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
