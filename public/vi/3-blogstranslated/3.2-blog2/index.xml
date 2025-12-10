@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Giảm thiểu rủi ro bằng phòng thủ nhiều lớp: Xây dựng khung kiểm soát AWS toàn diện on Báo cáo thực tập</title>
-    <link>mndkhanh.github.io/my-fcj-doc/public/vi/3-blogstranslated/3.2-blog2/</link>
+    <link>/vi/3-blogstranslated/3.2-blog2/</link>
     <description>Recent content in Giảm thiểu rủi ro bằng phòng thủ nhiều lớp: Xây dựng khung kiểm soát AWS toàn diện on Báo cáo thực tập</description>
     <generator>Hugo</generator>
     <language>vi</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="mndkhanh.github.io/my-fcj-doc/public/vi/3-blogstranslated/3.2-blog2/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/vi/3-blogstranslated/3.2-blog2/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

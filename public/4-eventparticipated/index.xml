@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Events Participated on Internship Report</title>
-    <link>mndkhanh.github.io/my-fcj-doc/public/4-eventparticipated/</link>
+    <link>/4-eventparticipated/</link>
     <description>Recent content in Events Participated on Internship Report</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="mndkhanh.github.io/my-fcj-doc/public/4-eventparticipated/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/4-eventparticipated/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
