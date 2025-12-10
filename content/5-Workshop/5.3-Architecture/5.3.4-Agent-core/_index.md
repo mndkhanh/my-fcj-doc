@@ -1,9 +1,10 @@
 ---
 
-title: "5.3.2. Chunking & Embedding"
-weight: 3
+title: "Chunking & Embedding"
+date: "2024-01-01"
+weight: 1
 chapter: false
-pre: " <b> 5.3.3 </b> "
+pre: " <b> 5.3.4 </b> "
 ----
 ## Why Chunking Matters
 

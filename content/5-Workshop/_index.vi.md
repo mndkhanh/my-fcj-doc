@@ -24,9 +24,6 @@ Trong workshop này, chúng ta sẽ xây dựng một **RAG (Retrieval-Augmented
 1. [Tổng quan về Workshop](5.1-workshop-overview/)
 2. [Chuẩn bị](5.2-prerequiste/)
 3. [Kiến trúc](5.3-architecture/)
-   - [5.3.1. Gọi Groq API](5.3-architecture/5.3.1-goi-groq-api/)
-   - [5.3.2. Chunking & Embedding](5.3-architecture/5.3.2-chunking-embedding/)
-   - [5.3.3. Code Handler AgentCore](5.3-architecture/5.3.3-code-handler-agentcore/)
 4. [Chạy Agent Core](5.4-agent-core-run/)
 5. [Dọn dẹp tài nguyên](5.6-cleanup/)
 
@@ -52,11 +49,16 @@ Trong workshop này, chúng ta sẽ xây dựng một **RAG (Retrieval-Augmented
 
 Sau workshop, bạn sẽ có:
 
-Agent có khả năng trả lời FAQ dựa trên vector search  
-Memory system để nhớ preferences và context người dùng  
-Tool orchestration để agent tự quyết định khi nào dùng tool  
-Production-ready code với error handling và logging  
+- Agent có khả năng trả lời FAQ dựa trên vector search  
+- Memory system để nhớ preferences và context người dùng  
+- Tool orchestration để agent tự quyết định khi nào dùng tool  
+- Production-ready code với error handling và logging  
 
 ---
 
-**Bắt đầu**: [5.1. Tổng quan về Workshop](5.1-workshop-overview/)
+#### Nội dung
+- [5.1. Giới thiệu](5.1-workshop-overview/)
+- [5.2. Các bước chuẩn bị](5.2-Prerequiste/)
+- [5.3. Kiến trúc mô hình RAG triển khai trên AWS](5.3-Architecture/)
+- [5.4. Chạy AgentCore](5.4-Agent-core-run/)
+- [5.5. Dọn dẹp tài nguyên](5.5-Clean-up/)

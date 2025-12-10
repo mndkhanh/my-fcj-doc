@@ -129,6 +129,19 @@
                 href="https://mndkhanh.github.io/my-fcj-doc/public/vi/3-blogstranslated/3.2-blog2/"
                 />
   </url><url>
+    <loc>https://mndkhanh.github.io/my-fcj-doc/public/vi/5-workshop/5.2-prerequiste/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://mndkhanh.github.io/my-fcj-doc/public/5-workshop/5.2-prerequiste/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://mndkhanh.github.io/my-fcj-doc/public/vi/5-workshop/5.2-prerequiste/"
+                />
+  </url><url>
     <loc>https://mndkhanh.github.io/my-fcj-doc/public/vi/1-worklog/1.2-week2/</loc>
     <lastmod>2024-01-01T00:00:00+07:00</lastmod>
     <xhtml:link
@@ -140,18 +153,6 @@
                 rel="alternate"
                 hreflang="vi"
                 href="https://mndkhanh.github.io/my-fcj-doc/public/vi/1-worklog/1.2-week2/"
-                />
-  </url><url>
-    <loc>https://mndkhanh.github.io/my-fcj-doc/public/vi/5-workshop/5.2-prerequiste/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://mndkhanh.github.io/my-fcj-doc/public/5-workshop/5.2-prerequiste/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="https://mndkhanh.github.io/my-fcj-doc/public/vi/5-workshop/5.2-prerequiste/"
                 />
   </url><url>
     <loc>https://mndkhanh.github.io/my-fcj-doc/public/vi/2-proposal/</loc>
@@ -342,6 +343,19 @@
                 href="https://mndkhanh.github.io/my-fcj-doc/public/vi/4-eventparticipated/4.5-event5/"
                 />
   </url><url>
+    <loc>https://mndkhanh.github.io/my-fcj-doc/public/vi/5-workshop/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://mndkhanh.github.io/my-fcj-doc/public/5-workshop/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://mndkhanh.github.io/my-fcj-doc/public/vi/5-workshop/"
+                />
+  </url><url>
     <loc>https://mndkhanh.github.io/my-fcj-doc/public/vi/1-worklog/1.5-week5/</loc>
     <lastmod>2024-01-01T00:00:00+07:00</lastmod>
     <xhtml:link
@@ -355,16 +369,16 @@
                 href="https://mndkhanh.github.io/my-fcj-doc/public/vi/1-worklog/1.5-week5/"
                 />
   </url><url>
-    <loc>https://mndkhanh.github.io/my-fcj-doc/public/vi/5-workshop/</loc>
+    <loc>https://mndkhanh.github.io/my-fcj-doc/public/vi/5-workshop/5.5-clean-up/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://mndkhanh.github.io/my-fcj-doc/public/5-workshop/"
+                href="https://mndkhanh.github.io/my-fcj-doc/public/5-workshop/5.5-clean-up/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="https://mndkhanh.github.io/my-fcj-doc/public/vi/5-workshop/"
+                href="https://mndkhanh.github.io/my-fcj-doc/public/vi/5-workshop/5.5-clean-up/"
                 />
   </url><url>
     <loc>https://mndkhanh.github.io/my-fcj-doc/public/vi/4-eventparticipated/4.6-event6/</loc>

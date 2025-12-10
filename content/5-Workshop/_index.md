@@ -1,6 +1,7 @@
 ---
 
 title: "Workshop"
+date: "2024-01-01"
 weight: 5
 chapter: false
 pre: " <b> 5. </b> "
@@ -23,10 +24,6 @@ In this workshop, we will build a complete **RAG (Retrieval-Augmented Generation
 1. [Workshop Overview](5.1-workshop-overview/)
 2. [Prerequisites](5.2-prerequiste/)
 3. [Architecture](5.3-architecture/)
-
-   * [5.3.1. Calling Groq API](5.3-architecture/5.3.1-goi-groq-api/)
-   * [5.3.2. Chunking & Embedding](5.3-architecture/5.3.2-chunking-embedding/)
-   * [5.3.3. AgentCore Code Handler](5.3-architecture/5.3.3-code-handler-agentcore/)
 4. [Running AgentCore](5.4-agent-core-run/)
 5. [Resource Cleanup](5.6-cleanup/)
 
@@ -59,4 +56,8 @@ By the end of the workshop, you will have:
 
 ---
 
-**Get Started**: [5.1. Workshop Overview](5.1-workshop-overview/)
+- [5.1. Introduction](5.1-workshop-overview/)
+- [5.2. Preparation Steps](5.2-Prerequiste/)
+- [5.3. RAG Architecture Deployed on AWS AgentCore](5.3-Architecture/)
+- [5.4. Run AgentCore](5.4-Agent-core-run/)
+- [5.5. Clean Up](5.5-Clean-up/)

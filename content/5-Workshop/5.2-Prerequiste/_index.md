@@ -1,20 +1,20 @@
 ---
-
 title: "Preparation Steps"
+date: "2024-01-01"
 weight: 2
 chapter: false
 pre: " <b> 5.2. </b> "
-----
+---
 
 #### IAM Permissions
 
 ## Required Permissions
 
-* AdministratorAccess
-* AmazonBedrockFullAccess
-* AWSCodeBuildAdminAccess
-* AWSCodeBuildDeveloperAccess
-* BedrockAgentCoreFullAccess
+- AdministratorAccess
+- AmazonBedrockFullAccess
+- AWSCodeBuildAdminAccess
+- AWSCodeBuildDeveloperAccess
+- BedrockAgentCoreFullAccess
 
 ## Create a User and Assign Permissions
 
@@ -22,7 +22,7 @@ pre: " <b> 5.2. </b> "
 2. Add the permissions listed above.
 3. Complete the user creation and save the Access Key if you need it for the SDK.
 
-![iam](/aws/static/images/5-Workshop/5.2-Prerequisite/iam.png)
+![iam](/images/5-Workshop/5.2-Prerequisite/iam.png)
 
 #### Download AWS CLI
 
@@ -31,7 +31,7 @@ Download AWS CLI:
 
 Then install it following the instructions.
 
-![CLI](/aws/static/images/5-Workshop/5.2-Prerequisite/cli.png)
+![CLI](/images/5-Workshop/5.2-Prerequisite/cli.png)
 
 ## UV Management Setup
 
@@ -53,7 +53,7 @@ Add UV to PATH:
 $env:Path = "C:\Users\leamo\.local\bin;$env:Path"
 ```
 
-![uvpath](/aws/static/images/5-Workshop/5.2-Prerequisite/uv.png)
+![uvpath](/images/5-Workshop/5.2-Prerequisite/uv.png)
 
 > Restart your machine to apply the new PATH.
 
@@ -65,7 +65,7 @@ Inside your project directory:
 uv init
 ```
 
-![runuv](/aws/static/images/5-Workshop/5.2-Prerequisite/uvinit.png)
+![runuv](/images/5-Workshop/5.2-Prerequisite/uvinit.png)
 
 Then select the environment in VS Code.
 
@@ -88,16 +88,16 @@ aws configure
 
 Fill in:
 
-* **AWS Access Key ID**
-* **AWS Secret Access Key**
-* **Default region name** (example: `ap-southeast-1`)
-* **Default output format**
+- **AWS Access Key ID**
+- **AWS Secret Access Key**
+- **Default region name** (example: `ap-southeast-1`)
+- **Default output format**
 
 ```bash
 json
 ```
 
-![conectCLI](/aws/static/images/5-Workshop/5.2-Prerequisite/conectcli.png)
+![conectCLI](/images/5-Workshop/5.2-Prerequisite/conectcli.png)
 
 ## Start AWS CLI AgentCore
 
@@ -109,11 +109,11 @@ uv run which agentcore
 
 After running, it will download all necessary libraries for AWS AgentCore.
 
-![run agentcore](/aws/static/images/5-Workshop/5.2-Prerequisite/whichagent.png)
+![run agentcore](/images/5-Workshop/5.2-Prerequisite/whichagent.png)
 
 ## Create Groq API
 
 Go to [Groq](https://console.groq.com/keys) and create an API key as shown.
 These external tools support RAG and are integrated through AWS AgentCore.
 
-![groqapi](/aws/static/images/5-Workshop/5.2-Prerequisite/groqapi.png)
+![groqapi](/images/5-Workshop/5.2-Prerequisite/groqapi.png)

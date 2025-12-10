@@ -15,21 +15,21 @@
     <title>Cấu hình &amp; Deploy AgentCore :: Báo cáo thực tập</title>
 
     
-    <link href="../../../../css/nucleus.css?1765368738" rel="stylesheet">
-    <link href="../../../../css/fontawesome-all.min.css?1765368738" rel="stylesheet">
-    <link href="../../../../css/hybrid.css?1765368738" rel="stylesheet">
-    <link href="../../../../css/featherlight.min.css?1765368738" rel="stylesheet">
-    <link href="../../../../css/perfect-scrollbar.min.css?1765368738" rel="stylesheet">
-    <link href="../../../../css/auto-complete.css?1765368738" rel="stylesheet">
-    <link href="../../../../css/atom-one-dark-reasonable.css?1765368738" rel="stylesheet">
-    <link href="../../../../css/theme.css?1765368738" rel="stylesheet">
-    <link href="../../../../css/hugo-theme.css?1765368738" rel="stylesheet">
+    <link href="../../../../css/nucleus.css?1765369865" rel="stylesheet">
+    <link href="../../../../css/fontawesome-all.min.css?1765369865" rel="stylesheet">
+    <link href="../../../../css/hybrid.css?1765369865" rel="stylesheet">
+    <link href="../../../../css/featherlight.min.css?1765369865" rel="stylesheet">
+    <link href="../../../../css/perfect-scrollbar.min.css?1765369865" rel="stylesheet">
+    <link href="../../../../css/auto-complete.css?1765369865" rel="stylesheet">
+    <link href="../../../../css/atom-one-dark-reasonable.css?1765369865" rel="stylesheet">
+    <link href="../../../../css/theme.css?1765369865" rel="stylesheet">
+    <link href="../../../../css/hugo-theme.css?1765369865" rel="stylesheet">
     
-    <link href="../../../../css/theme-workshop.css?1765368738" rel="stylesheet">
+    <link href="../../../../css/theme-workshop.css?1765369865" rel="stylesheet">
     
     
 
-    <script src="../../../../js/jquery-3.3.1.min.js?1765368738"></script>
+    <script src="../../../../js/jquery-3.3.1.min.js?1765369865"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -88,8 +88,8 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../../../%20js/lunr.min.js?1765368738"></script>
-<script type="text/javascript" src="../../../../%20js/auto-complete.js?1765368738"></script>
+<script type="text/javascript" src="../../../../%20js/lunr.min.js?1765369865"></script>
+<script type="text/javascript" src="../../../../%20js/auto-complete.js?1765369865"></script>
 <script type="text/javascript">
     { { if hugo.IsMultilingual } }
     var baseurl = "https:\/\/mndkhanh.github.io\/my-fcj-doc\/public\/\/vi";
@@ -97,7 +97,7 @@
     var baseurl = "https:\/\/mndkhanh.github.io\/my-fcj-doc\/public\/";
     { { end } }
 </script>
-<script type="text/javascript" src="../../../../%20js/search.js?1765368738"></script> 
+<script type="text/javascript" src="../../../../%20js/search.js?1765369865"></script> 
   </div>
 
   <div class="highlightable">
@@ -819,6 +819,24 @@
   </ul>
   
 </li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.5-clean-up/"
+  title="Dọn Dẹp"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../../vi/5-workshop/5.5-clean-up/">
+     <b> 5.5 </b> Dọn Dẹp 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
      
   </ul>
   
@@ -1061,8 +1079,8 @@
 	<h2 id="bắt-đầu-với-agentcore-configure">Bắt đầu với AgentCore Configure</h2>
 <p>Đầu tiên, bạn cần đẩy code từ máy local lên AWS AgentCore bằng lệnh:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>agentcore configure -e ./<span style="color:#f92672">{</span>ten_file_python.py<span style="color:#f92672">}</span>
-</span></span></code></pre></div><p><img src="../../../../aws/static/images/5-Workshop/5.4-S3-onprem/agentsetup1.png" alt="agentsetup1"></p>
-<p><img src="../../../../aws/static/images/5-Workshop/5.4-S3-onprem/agentsetup2.png" alt="agentsetup2"></p>
+</span></span></code></pre></div><p><img src="../../../../images/5-Workshop/5.4-S3-onprem/agentsetup1.png" alt="agentsetup1"></p>
+<p><img src="../../../../images/5-Workshop/5.4-S3-onprem/agentsetup2.png" alt="agentsetup2"></p>
 <h5 id="1-agent-name">1. Agent Name</h5>
 <p>Nhập tên cho Agent của bạn.</p>
 <h5 id="2-configuration-file">2. Configuration File</h5>
@@ -1084,7 +1102,7 @@ Agent chỉ cho phép truy cập qua AWS IAM Access Key &amp; Secret Key.</p>
 <p>Dùng lệnh sau để chạy Agent với API Key (dùng GROQ):</p>
 <p>agentcore launch &ndash;env GROQ_API_KEY=your_api_key_here</p>
 <p>Khi terminal báo trạng thái Running, Agent của bạn đã hoạt động thành công.</p>
-<p><img src="../../../../aws/static/images/5-Workshop/5.4-S3-onprem/agentsetupdone.png" alt="goodrun"></p>
+<p><img src="../../../../images/5-Workshop/5.4-S3-onprem/agentsetupdone.png" alt="goodrun"></p>
 
 
 
@@ -1765,6 +1783,22 @@ Agent chỉ cho phép truy cập qua AWS IAM Access Key &amp; Secret Key.</p>
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -1822,19 +1856,19 @@ Agent chỉ cho phép truy cập qua AWS IAM Access Key &amp; Secret Key.</p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../../../js/clipboard.min.js?1765368738"></script>
-    <script src="../../../../js/perfect-scrollbar.min.js?1765368738"></script>
-    <script src="../../../../js/perfect-scrollbar.jquery.min.js?1765368738"></script>
-    <script src="../../../../js/jquery.sticky.js?1765368738"></script>
-    <script src="../../../../js/featherlight.min.js?1765368738"></script>
-    <script src="../../../../js/highlight.pack.js?1765368738"></script>
+    <script src="../../../../js/clipboard.min.js?1765369865"></script>
+    <script src="../../../../js/perfect-scrollbar.min.js?1765369865"></script>
+    <script src="../../../../js/perfect-scrollbar.jquery.min.js?1765369865"></script>
+    <script src="../../../../js/jquery.sticky.js?1765369865"></script>
+    <script src="../../../../js/featherlight.min.js?1765369865"></script>
+    <script src="../../../../js/highlight.pack.js?1765369865"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../../../js/modernizr.custom-3.6.0.js?1765368738"></script>
-    <script src="../../../../js/learn.js?1765368738"></script>
-    <script src="../../../../js/hugo-learn.js?1765368738"></script>
+    <script src="../../../../js/modernizr.custom-3.6.0.js?1765369865"></script>
+    <script src="../../../../js/learn.js?1765369865"></script>
+    <script src="../../../../js/hugo-learn.js?1765369865"></script>
 
-    <link href="../../../../mermaid/mermaid.css?1765368738" rel="stylesheet" />
-    <script src="../../../../mermaid/mermaid.js?1765368738"></script>
+    <link href="../../../../mermaid/mermaid.css?1765369865" rel="stylesheet" />
+    <script src="../../../../mermaid/mermaid.js?1765369865"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

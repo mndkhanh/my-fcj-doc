@@ -1,7 +1,8 @@
 ---
 
 title: "Chunking & Embedding"
-weight: 3
+date: "2024-01-01"
+weight: 1
 chapter: false
 pre: " <b> 5.3.3 </b> "
 ----
@@ -143,9 +144,9 @@ results = faq_store.similarity_search(query, k=3)
 
 ## Deployment Checklist
 
-* [ ] Prepare documents (CSV, JSON, text files)
-* [ ] Select appropriate `chunk_size` (test 500, 750, 1000)
-* [ ] Choose embedding model (English or multilingual)
-* [ ] Build and save FAISS index
-* [ ] Test retrieval with sample queries
-* [ ] Monitor and tune the `k` value for similarity search
+* Prepare documents (CSV, JSON, text files)
+* Select appropriate `chunk_size` (test 500, 750, 1000)
+* Choose embedding model (English or multilingual)
+* Build and save FAISS index
+* Test retrieval with sample queries
+* Monitor and tune the `k` value for similarity search
