@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://mndkhanh.github.io/my-fcj-doc/public"
 relativeURLs = true
 canonifyURLs = true
 
